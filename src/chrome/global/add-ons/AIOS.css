@@ -1,0 +1,185 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ============================================= */
+/* All-in-One Sidebar */
+
+#aios-toolbar {
+	-moz-box-align: stretch !important;
+}
+#aios-toolbar > toolbarbutton,
+#aios-sbhtoolbar[iconsize="small"] > toolbarbutton,
+#aios-toolbar[orient="vertical"] > toolbarbutton {
+	margin: 1px !important;
+	padding: 2px !important;
+}
+#aios-toolbar toolbarbutton .toolbarbutton-icon {
+	margin: 0px !important;
+}
+#aios-sbhtoolbar > toolbarbutton[checked="true"] {
+	background-color: rgba(255,255,255,0.7) !important;
+	background-clip: padding-box;
+	border-color: transparent !important;
+	border-radius: 4px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.5) inset, 0px 0px 8px rgba(0,0,0,0.3) inset;
+}
+
+/* toolbox */
+
+#aios-toolbox-left #aios-toolbar,
+#main-window[aiosOpen="false"] #aios-toolbox-right #aios-toolbar,
+#main-window[aiosOrient="right"] #aios-toolbox-right #aios-toolbar {
+	border-left: none !important;
+	border-right: 1px solid rgba(110,110,110,0.4) !important;
+}
+#aios-toolbox-right #aios-toolbar,
+#main-window[aiosOrient="right"] #aios-toolbox-left #aios-toolbar,
+#main-window[aiosOrient="right"][aiosOpen="false"] #aios-toolbox-right #aios-toolbar {
+	border-left: 1px solid rgba(110,110,110,0.4) !important;
+	border-right: none !important;
+}
+#aios-toolbox-left #aios-toolbar[hidden="true"],
+#aios-toolbox-right #aios-toolbar[hidden="true"] {
+	border: none !important;
+}
+
+/* toggle toolbox */
+
+#aios-toggle-toolbox grippy {
+	background-color: ThreeDFace !important;
+	background-image: none !important;
+	border-left: none;
+	border-right: 1px solid rgba(110,110,110,0.4);
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2) inset;
+}
+#main-window[aiosOrient="right"] #aios-toggle-toolbox grippy {
+	border-left: 1px solid rgba(110,110,110,0.4);
+	border-right: none;
+}
+#aios-toggle-toolbox grippy:hover,
+#main-window[aiosOrient="right"] #aios-toggle-toolbox grippy:hover {
+	background-color: rgb(148,200,210) !important;
+}
+
+/* sidebar header */
+
+#sidebars-titlebutton > label {
+	background-image: url("chrome://global/skin/arrow/arrow-dn.gif") !important;
+	background-repeat: no-repeat !important;
+	background-position: 100% 8px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	-moz-margin-start: 0px !important;
+	-moz-margin-end: 2px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	-moz-padding-start: 0px !important;
+	-moz-padding-end: 10px !important;
+}
+
+/* sidebar page */
+
+#webpanels-window #page-button .toolbarbutton-menubutton-button,
+#webpanels-window #about-button .toolbarbutton-menubutton-button{
+	padding: 0px !important;
+}
+#page-button #ssrSidebar-mitem {
+	margin-left: 0px !important;
+}
+#addons-page[aios_appVendor="Mozilla"] .category,
+#addons-page[aios_appVendor="Mozilla"] .category[selected] {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	-moz-margin-start: 0px !important;
+	-moz-margin-end: 2px !important;
+	border: none !important;
+}
+#main-window[aios_appVendor="Mozilla"] #viewGroup {
+	padding: 0px !important;
+}
+
+/* menu icons */
+
+menuitem[key="aiosKey_panelTab1"] {
+	list-style-image: url("chrome://browser/skin/tabbrowser/tab-arrow-start.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+menuitem[key="aiosKey_panelTab2"] {
+	list-style-image: url("chrome://browser/skin/tabbrowser/tab-arrow-end.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+menuitem#aios-sidebar-mitem-hide {
+	list-style-image: url("chrome://global/skin/icons/close.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+menuitem#aios-sidebar-mitem-show {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 112px, 16px, 96px) !important;
+}
+menuitem[key="aiosKey_prefs"] {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 160px, 16px, 144px) !important;
+}
+
+/* toolbar icons */
+
+page[aios_appVendor="Mozilla"] .toolbarbutton-menubutton-button image {
+	margin: 0px 2px 0px 0px !important;
+}
+#addons-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#multipanel-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#pageinfo-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+#console-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+#paneltab-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 80px, 16px, 64px) !important;
+}
+#sidebars-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 96px, 16px, 80px) !important;
+}
+#sidebars-togglebutton.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 112px, 16px, 96px) !important;
+}
+#autohide-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 128px, 16px, 112px) !important;
+}
+#toolbar-button.aios-tbutton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 144px, 16px, 128px) !important;
+}
+#commandBar #toolsButton,
+#places-toolbar #viewButton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 160px, 16px, 144px) !important;
+}
+#page-button.aios-tbutton .toolbarbutton-menubutton-button {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 176px, 16px, 160px) !important;
+}
+#about-button.aios-tbutton .toolbarbutton-menubutton-button {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 192px, 16px, 176px) !important;
+}
+#places-toolbar #closeFolder {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 208px, 16px, 192px) !important;
+}
+#downloadManager[aios_appVendor="Mozilla"] #clearListButton {
+	list-style-image: url("chrome://global/skin/add-ons/AIOS-toolbar.png") !important;
+	-moz-image-region: rect(0px, 224px, 16px, 208px) !important;
+}
+

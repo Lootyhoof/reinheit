@@ -1,0 +1,241 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ============================================= */
+/* chaika & bbs2chreader */
+
+#CustomizeToolbarWindow #chaika-toolbarbutton,
+#main-window #chaika-toolbarbutton,
+#main-window #chaika-toolbarbutton:hover,
+#main-window #chaika-toolbarbutton[buttonover="true"],
+#main-window #chaika-toolbarbutton:hover:active,
+#main-window toolbar[iconsize="small"] #chaika-toolbarbutton,
+#main-window toolbar[iconsize="small"] #chaika-toolbarbutton:hover,
+#main-window toolbar[iconsize="small"] #chaika-toolbarbutton[buttonover="true"],
+#main-window toolbar[iconsize="small"] #chaika-toolbarbutton:hover:active {
+	list-style-image: url("chrome://global/skin/add-ons/chaika.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#bbs2chreader-button.toolbarbutton-1 {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2chreader.png") !important;
+	-moz-image-region: rect(0px, 24px, 24px, 0px) !important;
+}
+toolbar[iconsize="small"] #bbs2chreader-button.toolbarbutton-1 {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2chreader-small.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#navigator-toolbox #chaika-thread-toolbaritem .thread-toolbarbutton,
+#navigator-toolbox toolbar[iconsize="small"] #chaika-thread-toolbaritem .thread-toolbarbutton {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2chreader-status.png") !important;
+	-moz-image-region: rect(0px, 80px, 16px, 64px) !important;
+}
+.bookmark-item[label$="[bbs2chreader]"],
+.bookmark-item[label$="[chaika]"],
+.bookmark-item[statustext^="http://127.0.0.1:8823"] {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-2ch-item.png") !important;
+}
+.toolbarbutton-icon[src^="moz-anno:favicon:http://127.0.0.1:8823/skin/img/favicon/"],
+.menu-iconic-icon[src^="moz-anno:favicon:http://127.0.0.1:8823/skin/img/favicon/"] {
+	background-image: url("chrome://global/skin/add-ons/bbs2ch-2ch-item.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	max-height: 16px;
+	width: 16px;
+	padding-top: 16px;
+}
+
+/* Statusbar */
+
+#statusbar-bbs2chreader .b2rstatusbar-button{
+	padding: 0px !important;
+}
+.b2rstatusbar-button,
+#statusbar-chaika .thread-statusbar-button {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2chreader-status.png") !important;
+}
+.b2rstatusbar-button[anonid="btnGoToBoard"],
+.thread-statusbar-button[anonid="btnGoToBoard"] {
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.b2rstatusbar-button[anonid="btnWrite"],
+.thread-statusbar-button[anonid="btnWrite"] {
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+.b2rstatusbar-button[anonid="btnDeleteLog"],
+.thread-statusbar-button[anonid="btnDeleteLog"] {
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+.b2rstatusbar-button[anonid="btnViewChange"],
+.thread-statusbar-button[anonid="btnViewChange"] {
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+.b2rstatusbar-button[anonid="btnAboneManager"],
+.thread-statusbar-button[anonid="btnAboneManager"] {
+	-moz-image-region: rect(0px, 80px, 16px, 64px) !important;
+}
+.b2rstatusbar-button[anonid="btnViewChange"] > dropmarker,
+.thread-statusbar-button[anonid="btnViewChange"] > dropmarker {
+	display: none;
+}
+
+/* tree */
+
+#bookmarksPanel #historyMenu {
+	list-style-image: url("chrome://global/skin/add-ons/chaika-history.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#bookmarksPanel #toolsMenu {
+	list-style-image: url("chrome://global/skin/add-ons/chaika.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#bookmarksPanel #bookmarks-view treechildren::-moz-tree-image(title) {
+	list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png") !important;
+}
+#bookmarksPanel #bookmarks-view treechildren::-moz-tree-image(title, container) {
+	list-style-image: url("chrome://global/skin/icons/folder.png") !important;
+}
+/* 2ch */
+
+#pageMain #treeBbsMenu treechildren::-moz-tree-image(type-0),
+#bookmarksPanel #bookmarks-view treechildren::-moz-tree-image(title, type-0) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-2ch-item.png") !important;
+}
+
+/* Be 2ch */
+
+#pageMain #treeBbsMenu treechildren::-moz-tree-image(type-2),
+#bookmarksPanel #bookmarks-view treechildren::-moz-tree-image(title, type-2) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-be-item.png") !important;
+}
+
+/* JBBS */
+
+#pageMain #treeBbsMenu treechildren::-moz-tree-image(type-3),
+#bookmarksPanel #bookmarks-view treechildren::-moz-tree-image(title, type-3) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-j-item.png") !important;
+}
+
+/* Machi BBS */
+
+#pageMain #treeBbsMenu treechildren::-moz-tree-image(type-4),
+#bookmarksPanel #bookmarks-view treechildren::-moz-tree-image(title, type-4) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-machi-item.png") !important;
+}
+
+/* Subscribe */
+
+#pageMain treechildren::-moz-tree-image(Name, container) {
+	list-style-image: url("chrome://global/skin/icons/folder-open.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageMain treechildren::-moz-tree-image(Name, container, open) {
+	list-style-image: url("chrome://global/skin/icons/folder-open.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageMain treechildren::-moz-tree-image(Name, container, Updated) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-subscribe-item.png") !important;
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#pageMain treechildren::-moz-tree-image(Name, container, open, Updated) {
+	-moz-image-region: rect(16px, 32px, 32px, 16px) !important;
+}
+#pageMain #treeSubscribe treechildren::-moz-tree-image(Name, Updating) {
+	opacity: 0.5;
+	list-style-image: url("chrome://global/skin/throbber/Throbber-small.gif") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageMain #treeSubscribe treechildren::-moz-tree-image(Name, Error) {
+	list-style-image: url("chrome://global/skin/icons/notfound.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageMain #treeSubscribe treechildren::-moz-tree-image(Name, noUpdateItem) {
+	list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageMain #treeSubscribe treechildren::-moz-tree-image(Name, updateItem) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-subscribe-item.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+
+/* ============================================= */
+/* foxage2ch */
+
+#foxage2chWindow[oscpu^="Windows NT 6"][windowtype="FoxAge2ch"]:-moz-system-metric(windows-default-theme),
+#foxage2chWindow[platform^="Mac"][windowtype="FoxAge2ch"] {
+	background-color: -moz-Dialog !important;
+}
+
+/* buttons */
+
+#CustomizeToolbarWindow #foxage2ch-sidebar-button > .toolbarbutton-icon,
+#main-window #foxage2ch-sidebar-button > .toolbarbutton-icon,
+#main-window toolbar[iconsize="small"] #foxage2ch-sidebar-button > .toolbarbutton-icon {
+	list-style-image: url("chrome://global/skin/add-ons/foxage2ch-re.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+	width: 16px !important;
+	height: 16px !important;
+}
+
+/* toolbar */
+
+#foxage2chWindow #mainToolbar toolbarbutton:not([type="menu"]) {
+	list-style-image: url("chrome://global/skin/add-ons/foxage-toolbar.png") !important;
+}
+#foxage2chWindow #checkUpdatesButton {
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#foxage2chWindow #openUpdatesButton {
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#foxage2chWindow #addURLButton {
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+#foxage2chWindow #toggleFoldersButton {
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+
+/* tree */
+
+#checkUpdatesButton[disabled="true"] {
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+#openUpdatesButton[disabled="true"] {
+	list-style-image: url("chrome://global/skin/icons/folder-dis.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#foxage2chWindow treechildren::-moz-tree-image(checking) {
+	opacity: 0.5;
+	list-style-image: url("chrome://global/skin/throbber/Throbber-small.gif") !important;
+}
+#foxage2chWindow treechildren::-moz-tree-image(leaf, thread, primary),
+#foxage2chWindow treechildren::-moz-tree-image(leaf, thread, primary, updated) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-2ch-item.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#foxage2chWindow treechildren::-moz-tree-image(leaf, thread, primary, datout) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-item-datout.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#foxage2chWindow treechildren::-moz-tree-image(container, machi) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-machi-item.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#foxage2chWindow treechildren::-moz-tree-image(container, jbbs) {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2ch-j-item.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+
+/* options */
+
+#foxage2chPrefs radio[pane] {
+	list-style-image: url("chrome://browser/skin/preferences/options.png") !important;
+}
+#foxage2chPrefs radio[pane="pane1"],
+#foxage2chPrefs radio[pane="pane1"]:hover,
+#foxage2chPrefs radio[pane="pane1"][selected="true"] {
+	-moz-image-region: rect(0px, 32px, 32px, 0px) !important;
+}
+#foxage2chPrefs radio[pane="pane2"],
+#foxage2chPrefs radio[pane="pane2"]:hover,
+#foxage2chPrefs radio[pane="pane2"][selected="true"] {
+	-moz-image-region: rect(0px, 224px, 32px, 192px) !important;
+}

@@ -1,0 +1,158 @@
+
+/* Toolbar */
+
+#placesToolbar {
+	border: none;
+}
+
+/* back & forward buttons */
+
+#back-button,
+#forward-button {
+	list-style-image: url("chrome://browser/skin/Toolbar-small.png");
+}
+#back-button,
+#forward-button[chromedir="rtl"] {
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+#back-button[disabled="true"],
+#forward-button[chromedir="rtl"][disabled="true"] {
+	opacity: 0.5;
+}
+
+#forward-button,
+#back-button[chromedir="rtl"] {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+#forward-button[disabled="true"],
+#back-button[chromedir="rtl"][disabled="true"] {
+	opacity: 0.5;
+}
+
+/* Menu */
+
+#placesMenu {
+	-moz-appearance: none;
+	 border: none;
+}
+#placesMenu > menu {
+	-moz-appearance: none;
+	color: -moz-DialogText;
+}
+#placesMenu > menu > label {
+	background: url("chrome://global/skin/arrow/arrow-dn.gif") right center no-repeat;
+	-moz-padding-end: 8px;
+}
+#placesMenu[chromedir="rtl"] > menu > label {
+	background-position: left center;
+}
+
+/* organize button */
+
+#organizeButton {
+	list-style-image: url("chrome://browser/skin/places/organize.png");
+}
+
+/* view button */
+
+#viewMenu {
+	list-style-image: url("chrome://browser/skin/places/view.png");
+}
+
+/* maintenance button */
+
+#maintenanceButton {
+	list-style-image: url("chrome://browser/skin/places/importAndBackup.png");
+}
+
+/* clear downloads */
+
+#clearDownloadsButton {
+	list-style-image: url("chrome://global/skin/add-ons/bbs2chreader-status.png");
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+
+/* Root View */
+
+#placesView {
+	border-top: none;
+	background-color: Window;
+}
+#splitter {}
+
+/* Place List, Place Content */
+
+.placesTree {
+	margin: 0px;
+}
+#placesList {
+	-moz-appearance: none;
+	margin: 0px;
+	border: none;
+	padding: 0px;
+}
+#placeContent {
+	-moz-appearance: none;
+	border: 0px;
+}
+
+/* Search Bar */
+
+#searchFilter {
+	-moz-appearance: none;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	min-height: 24px !important;
+}
+.textbox-input-closebutton {
+	-moz-appearance: none;
+	cursor: default;
+	background-color: transparent;
+	list-style-image: url("chrome://global/skin/icons/close.png");
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+	width: 16px;
+	min-width: 16px;
+	height: 16px;
+	margin: 2px 3px;
+	padding: 0px !important;
+	border: none;
+}
+.textbox-input-closebutton:hover {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.textbox-input-closebutton:hover:active {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+.textbox-input-closebutton > .button-box {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+#searchModifiers {
+	padding: 0px;
+}
+#organizerScopeBar {
+	background-color: -moz-Dialog;
+	background-image: url("chrome://global/skin/reintoolbar/stripe.png");
+	background-position: 0% 0%;
+	background-repeat: repeat;
+}
+.small,
+.small[disabled="true"] {
+	min-width: 0px;
+	padding: 0px 2px;
+	border: 1px solid ThreeDShadow;
+	border-radius: 2px;
+}
+.small .button-text,
+.small .button-box {
+	padding: 1px;
+	border: 0px;
+}
+
+/* Info Panel */
+
+#infoBox #editBookmarkPanelGrid rows,
+#infoBox #editBookmarkPanelGrid columns {
+	padding: 2px;
+}

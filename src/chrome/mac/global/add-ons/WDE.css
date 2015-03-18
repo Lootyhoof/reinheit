@@ -1,0 +1,143 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ============================================= */
+/* Web Developer */
+
+/* Toolbar buttons */
+
+#web-developer-button.toolbarbutton-1 {
+	list-style-image: url("chrome://global/skin/add-ons/WDE.png") !important;
+}
+#web-developer-app-menu,
+#web-developer-context,
+#web-developer-menu,
+#web-developer-seamonkey,
+toolbar[iconsize="small"] #web-developer-button.toolbarbutton-1 {
+	list-style-image: url("chrome://global/skin/add-ons/WDE-small.png") !important;
+}
+toolbarbutton[id^="web-developer"]:not([type="menu"]) .toolbarbutton-icon,
+toolbarbutton[id^="web-developer"][type="menu"]:not([buttonstyle="full"]) .toolbarbutton-icon {
+	-moz-margin-end: 0px;
+}
+#web-developer-cookies-toolbar,
+#web-developer-css-toolbar,
+#web-developer-disable-toolbar,
+#web-developer-forms-toolbar,
+#web-developer-images-toolbar,
+#web-developer-information-toolbar,
+#web-developer-miscellaneous-toolbar,
+#web-developer-options-toolbar,
+#web-developer-outline-toolbar,
+#web-developer-resize-toolbar,
+#web-developer-tools-toolbar,
+#web-developer-view-source-toolbar {
+	list-style-image: url("chrome://global/skin/add-ons/WDE-toolbar.png") !important;
+}
+#web-developer-cookies-toolbar {
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+#web-developer-disable-toolbar {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+#web-developer-css-toolbar {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+#web-developer-resize-toolbar {
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+#web-developer-forms-toolbar {
+	-moz-image-region: rect(0px, 80px, 16px, 64px);
+}
+#web-developer-images-toolbar {
+	-moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+#web-developer-information-toolbar {
+	-moz-image-region: rect(0px, 112px, 16px, 96px);
+}
+#web-developer-miscellaneous-toolbar {
+	-moz-image-region: rect(0px, 128px, 16px, 112px);
+}
+#web-developer-outline-toolbar {
+	-moz-image-region: rect(0px, 144px, 16px, 128px);
+}
+#web-developer-tools-toolbar {
+	-moz-image-region: rect(0px, 160px, 16px, 144px);
+}
+#web-developer-view-source-toolbar {
+	-moz-image-region: rect(0px, 176px, 16px, 160px);
+}
+#web-developer-options-toolbar {
+	-moz-image-region: rect(0px, 192px, 16px, 176px);
+}
+toolbarbutton.web-developer-close-toolbar {
+	list-style-image: url("chrome://global/skin/icons/close.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+toolbarbutton.web-developer-close-toolbar:hover {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+toolbarbutton.web-developer-close-toolbar:hover:active {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+
+/* Status buttons */
+
+#web-developer-render-mode-statusbar,
+#web-developer-render-mode-statusbar.quirks,
+#web-developer-css-statusbar,
+#web-developer-css-statusbar.error,
+#web-developer-css-statusbar.valid,
+#web-developer-javascript-statusbar,
+#web-developer-javascript-statusbar.error,
+#web-developer-javascript-statusbar.valid,
+#web-developer-javascript-statusbar.warning {
+	list-style-image: url("chrome://global/skin/add-ons/WDE-statusbar.png") !important;
+}
+#web-developer-render-mode-statusbar {
+	-moz-image-region: rect(0px 16px 16px 0px);
+}
+#web-developer-render-mode-statusbar.quirks {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+#web-developer-css-statusbar {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+#web-developer-css-statusbar.valid {
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+#web-developer-css-statusbar.error {
+	-moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+#web-developer-javascript-statusbar {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+#web-developer-javascript-statusbar.valid {
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+#web-developer-javascript-statusbar.warning {
+	-moz-image-region: rect(0px, 80px, 16px, 64px);
+}
+#web-developer-javascript-statusbar.error {
+	-moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+
+/* Page Validation buttons */
+
+#web-developer-accessibility-validation.valid,
+#web-developer-css-validation.valid,
+#web-developer-html-validation.valid {
+	list-style-image: url("chrome://global/skin/add-ons/WDE-statusbar.png") !important;
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+#web-developer-accessibility-validation.warning,
+#web-developer-css-validation.warning,
+#web-developer-html-validation.invalid {
+	list-style-image: url("chrome://global/skin/add-ons/WDE-statusbar.png") !important;
+	-moz-image-region: rect(0px, 80px, 16px, 64px);
+}
+#web-developer-accessibility-validation.error,
+#web-developer-css-validation.error {
+	list-style-image: url("chrome://global/skin/add-ons/WDE-statusbar.png") !important;
+	-moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+

@@ -1,0 +1,166 @@
+
+/* ============================================= */
+/* Sage */
+
+#sage-button{
+	list-style-image: url("chrome://global/skin/add-ons/sage.png") !important;
+}
+toolbar[iconsize="small"] #sage-button {
+	list-style-image: url("chrome://global/skin/add-ons/sage-small.png") !important;
+}
+
+/* Sage Sidebar */
+
+#pageSagePanel toolbarbutton.sage_button,
+#sagePanel #feedListToolbar toolbarbutton {
+	list-style-image: url("chrome://global/skin/add-ons/sage-toolbar.png") !important;
+}
+#pageSagePanel #checkFeeds,
+#pageSagePanel #checkFeeds:active,
+#sagePanel #checkFeeds,
+#sagePanel #checkFeeds:hover,
+#sagePanel #checkFeeds:active {
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel #checkFeeds[disabled="true"],
+#sagePanel #checkFeeds[disabled="true"] {
+	opacity: 0.5;
+}
+#pageSagePanel #checkFeeds[checked="true"],
+#pageSagePanel #checkFeeds[checked="true"]:active {
+	opacity: 0.5;
+	list-style-image: url("chrome://global/skin/throbber/Throbber-small.gif") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel #discoverFeeds,
+#pageSagePanel #discoverFeeds:active,
+#sagePanel #discoverFeeds,
+#sagePanel #discoverFeeds:hover,
+#sagePanel #discoverFeeds:active {
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#pageSagePanel #discoverFeeds[disabled="true"],
+#sagePanel #discoverFeeds[disabled="true"] {
+	opacity: 0.5;
+}
+#pageSagePanel #hideNoUpdated,
+#pageSagePanel #hideNoUpdated:active {
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+#pageSagePanel #hideNoUpdated[disabled="true"] {
+	opacity: 0.5;
+}
+#pageSagePanel #toggleAllFolders {
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+#pageSagePanel #toggleAllFolders:active {
+	list-style-image: url("chrome://global/skin/icons/folder-open.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel #toggleAllFolders[disabled="true"] {
+	opacity: 0.5;
+}
+
+/* Sage Tree */
+
+#pageSagePanel tree treechildren::-moz-tree-image(title),
+#pageSagePanel tree treechildren::-moz-tree-image(title, no-updated),
+#pageSagePanel tree treechildren::-moz-tree-image(title, no-check),
+#sagePanel #bookmarks-view treechildren::-moz-tree-image(leaf),
+#sagePanel #bookmarks-view treechildren::-moz-tree-image(leaf, sage_state_no-updated) {
+	list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel tree treechildren::-moz-tree-image(title, updated),
+#sagePanel #bookmarks-view treechildren::-moz-tree-image(leaf, sage_state_updated) {
+	list-style-image: url("chrome://browser/skin/places/starPage.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel tree treechildren::-moz-tree-image(title, unknown),
+#sagePanel #bookmarks-view treechildren::-moz-tree-image(leaf, sage_state_unknown) {
+	list-style-image: url("chrome://global/skin/add-ons/sage-item-unknown.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel #rssStatusImage[loading="error"],
+#pageSagePanel tree treechildren::-moz-tree-image(title, error),
+#browser [error] #loading-text,
+#sagePanel #statusBarImage.error,
+#sagePanel #bookmarks-view treechildren::-moz-tree-image(leaf, sage_state_error) {
+	list-style-image: url("chrome://global/skin/icons/notfound.png") !important;
+}
+#pageSagePanel #rssStatusImage[loading="true"],
+#sagePanel #statusBarImage.loading,
+#sagePanel #statusBarImage.checking,
+#sagePanel #bookmarks-view treechildren::-moz-tree-image(leaf, sage_state_checking) {
+	opacity: 0.5;
+	list-style-image: url("chrome://global/skin/throbber/Throbber-small.gif") !important;
+}
+#pageSagePanel tree treechildren::-moz-tree-image(title, container) {
+	list-style-image: url("chrome://global/skin/icons/folder.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel tree treechildren::-moz-tree-image(title, open) {
+	list-style-image: url("chrome://global/skin/icons/folder-open.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#pageSagePanel tree treechildren::-moz-tree-image(title, separator) {
+	-moz-image-region: auto !important;
+	list-style-image: none !important;
+}
+
+/* Search */
+
+#btnSearchSubmit {
+	list-style-image: url("chrome://browser/skin/Go-arrow.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#txtSearchValue {
+	min-height: 22px;
+}
+#imgSearchEngine {
+	margin: 2px !important;
+	min-width: 16px;
+	min-height: 16px;
+}
+
+/* List Toolbar */
+
+#rssItemListBoxBox toolbarbutton#markAsReadButton,
+#rssItemListBoxBox toolbarbutton#markAsUnreadButton,
+#rssItemListBoxBox toolbarbutton#markAllAsReadButton,
+#rssItemListBoxBox toolbarbutton#markAllAsUnreadButton {
+	list-style-image: url("chrome://global/skin/add-ons/sage-list.png") !important;
+}
+
+#rssItemListBoxBox #markAsReadButton,
+#rssItemListBoxBox #markAsReadButton:hover,
+#rssItemListBoxBox #markAsReadButton:active {
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+#rssItemListBoxBox #markAsReadButton[disabled="true"] {
+	opacity: 0.5;
+}
+#rssItemListBoxBox #markAsUnreadButton,
+#rssItemListBoxBox #markAsUnreadButton:hover,
+#rssItemListBoxBox #markAsUnreadButton:active {
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+#rssItemListBoxBox #markAsUnreadButton[disabled="true"] {
+	opacity: 0.5;
+}
+#rssItemListBoxBox #markAllAsReadButton,
+#rssItemListBoxBox #markAllAsReadButton:hover,
+#rssItemListBoxBox #markAllAsReadButton:active {
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#rssItemListBoxBox #markAllAsReadButton[disabled="true"] {
+	opacity: 0.5;
+}
+#rssItemListBoxBox #markAllAsUnreadButton,
+#rssItemListBoxBox #markAllAsUnreadButton:hover,
+#rssItemListBoxBox #markAllAsUnreadButton:active {
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#rssItemListBoxBox #markAllAsUnreadButton[disabled="true"] {
+	opacity: 0.5;
+}

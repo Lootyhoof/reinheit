@@ -1,0 +1,211 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/*** Panel and outer controls ***/
+
+#downloadsPanel {
+	padding: 0px;
+}
+#downloadsPanel > .panel-arrowcontainer > .panel-arrowcontent {
+	padding: 0px;
+}
+#downloadsListBox {
+	color: inherit;
+	background-color: transparent;
+	min-width: 0px;
+	padding: 0px;
+}
+#downloadsHistory {
+	cursor: pointer;
+	color: -moz-nativehyperlinktext;
+	background-image: url("chrome://global/skin/reintoolbar/shadow-top.png") !important;
+	background-position: 0% 0%;
+	background-repeat: repeat-x;
+	margin: 0px;
+	border-radius: 0px;
+}
+#downloadsHistory > .button-box {
+	margin: 1.1em 1em 1em 1em;
+}
+
+/*** List items ***/
+
+richlistitem[type="download"] {
+	color: inherit;
+	background: transparent;
+	height: 48px;
+	padding: 0px 8px 0px 8px;
+	margin: 0px;
+	border-top: 1px dotted #CCCCCC;
+}
+richlistitem[type="download"]:first-child {
+	border-top: 1px solid transparent;
+}
+richlistitem[type="download"]:hover {
+	background-image: url("chrome://global/skin/reintoolbar/back-light-b.png");
+}
+richlistitem[type="download"][state="1"]:hover {
+	cursor: pointer;
+	color: -moz-FieldText !important;
+	backgronud-color: transparent !important;
+	background-image: url("chrome://global/skin/reintoolbar/dot.png") !important;
+}
+.downloadInfo {
+	padding: 3px;
+	-moz-padding-end: 0px;
+}
+.downloadTypeIcon {
+	/* Prevent flickering when changing states. */
+	min-height: 32px;
+	min-width: 32px;
+}
+.blockedIcon {
+	list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+.downloadTarget {
+	cursor: inherit;
+	margin-bottom: 2px;
+}
+.downloadDetails {
+	cursor: inherit;
+	font-size: 90%;
+	opacity: 0.6;
+}
+.downloadButton {
+	-moz-appearance: none;
+	list-style-image: url("chrome://browser/skin/downloads/buttons.png");
+	background: transparent;
+	min-width: 0px;
+	min-height: 0px;
+	padding: 6px;
+	margin: 0px;
+	border: none;
+}
+.downloadButton > .button-box {
+	padding: 0px;
+}
+
+/*** Button icons ***/
+
+.downloadButton.downloadCancel {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.downloadButton.downloadShow {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+.downloadButton.downloadRetry {
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+.downloadButton.downloadCancel:hover,
+.downloadButton.downloadShow:hover,
+.downloadButton.downloadRetry:hover {
+	opacity: 0.8;
+}
+.downloadButton.downloadCancel:active,
+.downloadButton.downloadShow:active,
+.downloadButton.downloadRetry:active {
+	opacity: 0.4;
+}
+
+/*** Status and progress indicator ***/
+
+#downloads-indicator {
+	width: auto;
+}
+#downloads-indicator-anchor {
+	min-width: 16px;
+	min-height: 16px;
+	/* Makes the outermost stack element positioned, so that its contents are
+	rendered over the main browser window in the Z order.  This is required by
+	the animated event notification. */
+	position: relative;
+}
+
+/*** Main indicator icon ***/
+
+#downloads-indicator-icon {
+	background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"), 0, 144, 24, 120) center no-repeat;
+}
+toolbar[iconsize="small"] #downloads-indicator-icon {
+	background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80) center no-repeat;
+}
+
+/*** Event notification ***/
+
+#downloads-indicator-notification {
+	opacity: 0;
+	background: url("chrome://browser/skin/downloads/download-notification.png") center no-repeat;
+	background-size: 16px;
+}
+@keyframes downloadsIndicatorNotificationRight {
+	from { opacity: 0; transform: translate(-128px, 128px) scale(8); }
+	20%  { opacity: 0.85; animation-timing-function: ease-out; }
+	to   { opacity: 0; transform: translate(0) scale(1); }
+}
+@keyframes downloadsIndicatorNotificationLeft {
+	from { opacity: 0; transform: translate(128px, 128px) scale(8); }
+	20%  { opacity: 0.85; animation-timing-function: ease-out; }
+	to   { opacity: 0; transform: translate(0) scale(1); }
+}
+#downloads-indicator[notification] > #downloads-indicator-anchor > #downloads-indicator-notification {
+	animation-name: downloadsIndicatorNotificationRight;
+	animation-duration: 1s;
+}
+#downloads-indicator[notification]:locale-dir(rtl) > #downloads-indicator-anchor > #downloads-indicator-notification {
+	animation-name: downloadsIndicatorNotificationLeft;
+}
+
+/*** Progress bar and text ***/
+
+#downloads-indicator-counter {
+	font-size: 9px;
+	text-align: center;
+	line-height: 9px;
+	color: hsl(0,0%,30%);
+	height: 12px;
+	margin: 0px;
+}
+#downloads-indicator-counter:-moz-lwtheme-brighttext {
+	color: white;
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.7), 0px 1px 1.5px rgba(0,0,0,0.5);
+}
+#downloads-indicator-progress {
+	width: 22px;
+	height: 4px;
+	min-width: 0px;
+	min-height: 0px;
+	margin-top: 1px;
+	margin-bottom: 2px;
+	border-radius: 2px;
+}
+toolbar[iconsize="small"] #downloads-indicator-progress {
+	width: 14px;
+}
+#downloads-indicator-progress > .progress-bar {
+	-moz-appearance: none;
+	background-color: rgba(0,0,0,0.1);
+	min-width: 0px;
+	min-height: 0px;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px 0px 0px 2px;
+}
+#downloads-indicator-progress > .progress-remainder {
+	-moz-appearance: none;
+	background-color: rgba(0,0,0,0.1);
+	min-width: 0px;
+	min-height: 0px;
+	border: 1px solid #CCCCCC;
+	-moz-border-start: none;
+	border-radius: 0px 2px 2px 0px;
+}
+#downloads-indicator[paused] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-progress > .progress-bar {
+	background-image: linear-gradient(#DDDD00, #C4C400 49%, #B2B200 51%, #CECE00);
+}
+#downloads-indicator[paused] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-progress > .progress-remainder {
+	background-image: linear-gradient(#9a9a00, #a1a100);
+}

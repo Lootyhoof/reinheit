@@ -1,0 +1,181 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ===== toolbar.css ====================================================
+  == Styles used by XUL toolbar-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: toolbox ::::: */
+
+toolbox {
+	background-color: -moz-Dialog;
+	background-image: url("chrome://global/skin/reintoolbar/border.png");
+	background-position: 0% 100%;
+	background-repeat: repeat-x;
+}
+#navigator-toolbox {
+	-moz-appearance: none;
+	background-color: transparent;
+}
+#main-window toolbox:not([id="navigator-toolbox"]) {
+	background-image: none !important;
+}
+
+/* ::::: toolbar & menubar ::::: */
+
+toolbar,
+menubar {
+	min-width: 1px;
+	border: none !important;
+}
+toolbar[type="menubar"],
+menubar {
+	padding: 0px !important;
+}
+toolbar,
+#addon-bar {
+	min-height: 20px;
+	padding: 1px 0px;
+}
+#nav-bar {
+	background-image: url("chrome://global/skin/reintoolbar/stripe.png");
+	background-position: 0% 0%;
+	background-repeat: repeat;
+}
+toolbar.chromeclass-toolbar {
+	min-height: 16px;
+}
+toolbar[mode="icons"] .toolbarbutton-text {
+	display: none;
+}
+toolbar[mode="text"] .toolbarbutton-icon {
+	display: none;
+}
+toolbar[mode="text"] .toolbarbutton-text {
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	padding: 0 !important;
+	margin: 3px 5px !important;
+}
+
+/* ::::: toolbar decorations ::::: */
+
+toolbarseparator {
+	-moz-appearance: separator;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	-moz-border-left-colors  : transparent transparent #CCCCCC;
+	-moz-border-right-colors : transparent transparent ThreeDHighlight;
+}
+toolbarspacer {
+	width: 15px;
+}
+
+/* ::::: toolbarpaletteitem ::::: */
+
+toolbarpaletteitem {
+	cursor: -moz-grab;
+}
+
+/* place toolbar */
+
+toolbarpaletteitem[place="toolbar"] {
+	-moz-margin-start: -2px;
+	-moz-margin-end: -2px;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
+toolbarpaletteitem[place="toolbar"] > toolbarspacer {
+	width: 11px;
+}
+.toolbarpaletteitem-box[type="spring"][place="toolbar"] {
+	background: url("chrome://global/skin/toolbar/flex.png") no-repeat center;
+}
+.toolbarpaletteitem-box[type="spacer"][place="toolbar"],
+.toolbarpaletteitem-box[type="spring"][place="toolbar"] {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	-moz-margin-start: 0px;
+	-moz-margin-end: 2px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+}
+
+/* place palette */
+
+.toolbarpaletteitem-box[type="separator"][place="palette"] {
+	padding: 10px;
+}
+.toolbarpaletteitem-box[type="spacer"][place="palette"],
+.toolbarpaletteitem-box[type="spring"][place="palette"] {
+	border: 5px solid;
+	-moz-border-top-colors: transparent transparent transparent transparent #CCCCCC;
+	-moz-border-right-colors: transparent transparent transparent transparent #CCCCCC;
+	-moz-border-bottom-colors: transparent transparent transparent transparent #CCCCCC;
+	-moz-border-left-colors: transparent transparent transparent transparent #CCCCCC;
+	border-radius: 7px;
+}
+#personal-bookmarks .bookmarks-toolbar-customize {
+	list-style-image: url("chrome://global/skin/toolbar/bookmarks-folder.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.toolbarpaletteitem-box[type="spring"][place="palette"] {
+	background: url("chrome://global/skin/toolbar/flex.png") no-repeat center;
+}
+#wrapper-personal-bookmarks .toolbarpaletteitem-box[place="palette"] {
+	background: url("chrome://global/skin/toolbar/bookmarks-folder.png") no-repeat center !important;
+	width: 16px;
+	height: 16px;
+}
+#wrapper-throbber-box .toolbarpaletteitem-box[place="palette"] {
+	width: 16px;
+	height: 16px;
+}
+
+/* ..... drag and drop feedback ..... */
+
+toolbarpaletteitem[dragover="left"] {
+	border-left-color: -moz-DialogText;
+}
+toolbarpaletteitem[dragover="right"] {
+	border-right-color: -moz-DialogText;
+}

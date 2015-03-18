@@ -1,0 +1,31 @@
+
+/* Tab Modal Prompt boxes */
+
+tabmodalprompt {
+	font-family: sans-serif; /* use content font not system UI font */
+	background-color: rgba(0,0,0,0.3);
+}
+.mainContainer {
+	font: message-box;
+	color: -moz-FieldText;
+	background-color: -moz-Field;
+	min-width: 1px;
+	padding: 0px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+.topContainer {
+	padding: 20px;
+}
+.buttonContainer {
+	background-color: -moz-Dialog;
+	background-image: url("chrome://global/skin/reintoolbar/shadow-top-border.png");
+	background-position: 0% 0%;
+	background-repeat: repeat-x;
+	background-clip: padding-box;
+	padding: 8px 10px;
+	border: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}

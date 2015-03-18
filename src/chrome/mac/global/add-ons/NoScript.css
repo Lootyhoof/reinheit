@@ -1,0 +1,167 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ============================================= */
+/* NoScript */
+
+.noscript-bottom-notify notification {
+	border-top: 1px solid #CCCCCC !important;
+	border-bottom: 0px solid transparent !important;
+}
+
+/* yes */
+
+#palette-box #noscript-tbb,
+.noscript-yes,
+#noscript-tbb.noscript-yes,
+#noscript-statusIcon.noscript-yes,
+.noscript-allow,
+.noscript-allow-from,
+.noscript-inactive-yes,
+#noscript-tbb.noscript-inactive-yes,
+#noscript-statusIcon.noscript-inactive-yes,
+#noscript-tbb.noscript-yu,
+#noscript-statusIcon.noscript-yu,
+.noscript-inactive-yu,
+#noscript-tbb.noscript-inactive-yu,
+#noscript-statusIcon.noscript-inactive-yu {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-yes.png") !important;
+}
+.noscript-glb,
+#noscript-tbb.noscript-glb,
+#noscript-statusIcon.noscript-glb,
+.noscript-inactive-glb,
+#noscript-tbb.noscript-inactive-glb,
+#noscript-statusIcon.noscript-inactive-glb,
+.noscript-yu-glb,
+.noscript-inactive-yu-glb,
+#noscript-tbb.noscript-yu-glb,
+#noscript-tbb.noscript-inactive-yu-glb,
+#noscript-statusIcon.noscript-yu-glb,
+#noscript-statusIcon.noscript-inactive-yu-glb {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-global.png") !important;
+}
+
+/* no */
+
+.noscript-no,
+#noscript-tbb.noscript-no,
+#noscript-statusIcon.noscript-no,
+.noscript-forbid,
+.noscript-inactive-no,
+#noscript-tbb.noscript-inactive-no,
+#noscript-statusIcon.noscript-inactive-no,
+#noscript-menu-recent-blocked {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-no.png") !important;
+}
+.noscript-no.noscript-glb, .noscript-forbid.noscript-glb {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-no-global.png") !important;
+}
+
+/* temp */
+
+#noscript-tbb-temp-page,
+.noscript-temp.noscript-allow,
+.noscript-temp.noscript-allow-from {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-temp.png") !important;
+}
+#noscript-tbb-revoke-temp,
+.noscript-revoke-temp {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-revtemp.png") !important;
+}
+
+/* untrusted */
+
+.noscript-distrust,
+.noscript-untrusted,
+#noscript-tbb.noscript-untrusted,
+#noscript-tbb.noscript-inactive-untrusted,
+#noscript-statusIcon.noscript-untrusted
+#noscript-statusIcon.noscript-inactive-untrusted {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-untrusted.png") !important;
+}
+.noscript-untrusted-glb,
+.noscript-inactive-untrusted-glb,
+#noscript-tbb.noscript-untrusted-glb,
+#noscript-tbb.noscript-inactive-untrusted-glb,
+#noscript-statusIcon.noscript-untrusted-glb,
+#noscript-statusIcon.noscript-inactive-untrusted-glb {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-untrusted-global.png") !important;
+}
+
+/* prt */
+
+.noscript-prt,
+#noscript-tbb.noscript-prt,
+#noscript-statusIcon.noscript-prt,
+.noscript-inactive-subprt,
+#noscript-tbb.noscript-inactive-subprt,
+#noscript-statusIcon.noscript-inactive-subprt,
+.noscript-inactive-prt,
+#noscript-tbb.noscript-inactive-prt,
+#noscript-statusIcon.noscript-inactive-prt {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-prt.png") !important;
+}
+.noscript-subprt,
+#noscript-tbb.noscript-subprt,
+#noscript-statusIcon.noscript-subprt {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-subprt.png") !important;
+}
+
+/* embed */
+
+.noscript-emb,
+#noscript-tbb.noscript-emb,
+#noscript-statusIcon.noscript-emb,
+.noscript-inactive-emb,
+#noscript-tbb.noscript-inactive-emb,
+#noscript-statusIcon.noscript-inactive-emb,
+.noscript-yu-emb,
+.noscript-inactive-yu-emb,
+#noscript-tbb.noscript-yu-emb,
+#noscript-tbb.noscript-inactive-yu-emb,
+#noscript-statusIcon.noscript-yu-emb,
+#noscript-statusIcon.noscript-inactive-yu-emb {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-emb.png") !important;
+}
+.noscript-no-emb,
+#noscript-tbb.noscript-no-emb,
+#noscript-statusIcon.noscript-no-emb,
+.noscript-inactive-no-emb,
+#noscript-tbb.noscript-inactive-no-emb,
+#noscript-statusIcon.noscript-inactive-no-emb,
+#noscript-menu-recent-blocked {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-no-emb.png") !important;
+}
+.noscript-embed,
+.noscript-ef.inactive {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-no-embed.png");
+}
+.noscript-allow-from.noscript-embed,
+.noscript-ef {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-embed.png")
+}
+
+/* etc */
+
+.noscript-faq {
+	list-style-image: url("chrome://global/skin/icons/question-small.png") !important;
+}
+.noscript-plugin, .noscript-allow-from.noscript-plugin {
+	list-style-image: url("chrome://mozapps/skin/plugins/pluginGeneric-16.png") !important;
+}
+.noscript-xss,
+#noscript-statusXss {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-xss.png") !important;
+}
+.noscript-jar {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-jar.png") !important;
+}
+.noscript-https {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-https.png") !important;
+}
+.noscript-abe {
+	list-style-image: url("chrome://global/skin/add-ons/noscript-abe.png") !important;
+}
+.noscript-ef {
+	list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric-16.png") !important;
+}

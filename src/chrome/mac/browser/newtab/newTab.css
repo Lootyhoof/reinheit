@@ -1,0 +1,132 @@
+:root {
+	-moz-appearance: none;
+	background-color: transparent;
+}
+
+/* SCROLLBOX */
+
+#newtab-scrollbox:not([page-disabled]) {
+	background-color: transparent;
+	background-image: url("chrome://global/skin/reintoolbar/dot.png");
+	background-attachment: fixed;
+}
+
+/* TOGGLE */
+
+#newtab-toggle {
+	background-color: transparent;
+	background-image: url("chrome://browser/skin/newtab/controls.png");
+	background-position: -32px 0;
+	width: 16px;
+	height: 16px;
+	padding: 0px;
+	border: none;
+}
+#newtab-toggle:hover {
+	opacity: 0.8;
+}
+#newtab-toggle:active {
+	opacity: 0.4;
+}
+#newtab-toggle[page-disabled] {
+	opacity: 0.4;
+}
+#newtab-toggle[page-disabled]:hover {
+	opacity: 0.8;
+}
+
+/* ROWS */
+
+.newtab-row {
+	margin-bottom: 20px;
+}
+
+.newtab-row:last-child {
+	margin-bottom: 0;
+}
+
+/* CELLS */
+
+.newtab-cell {
+	-moz-margin-end: 20px;
+	background-color: rgba(255,255,255,0.2);
+	border: 1px solid;
+	border-color: rgba(8,22,37,0.12) rgba(8,22,37,0.14) rgba(8,22,37,0.16);
+	border-radius: 1px;
+	transition: border-color 100ms ease-out;
+}
+.newtab-cell:empty {
+	border: 1px dashed;
+	border-color: rgba(8,22,37,0.15) rgba(8,22,37,0.17) rgba(8,22,37,0.19);
+}
+.newtab-cell:last-child {
+	-moz-margin-end: 0;
+}
+.newtab-cell:hover:not(:empty) {
+	border-color: rgba(8,22,37,0.25) rgba(8,22,37,0.27) rgba(8,22,37,0.3);
+}
+
+/* SITES */
+
+.newtab-site {
+	text-decoration: none;
+	transition-property: top, left, opacity, box-shadow, background-color;
+}
+.newtab-site:hover,
+.newtab-site[dragged] {
+	box-shadow: 0px 0px 10px rgba(30,30,30,0.4);
+}
+.newtab-site[dragged] {
+	transition-property: box-shadow, background-color;
+	background-color: rgb(242,242,242);
+}
+
+/* THUMBNAILS */
+
+.newtab-thumbnail {
+	background-origin: padding-box;
+	background-clip: padding-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* TITLES */
+
+.newtab-title {
+	font-size: 12px;
+	line-height: 24px;
+	color: #000000;
+	background-color: rgba(255,255,255,0.8);
+	padding: 0px 8px;
+}
+
+/* CONTROLS */
+
+.newtab-control {
+	background-color: transparent;
+	background-image: url("chrome://browser/skin/newtab/controls.png");
+	width: 16px;
+	height: 16px;
+	padding: 1px 2px 3px;
+	border: none;
+}
+.newtab-control-pin[pinned] {
+	background-position: -16px 0px;
+}
+.newtab-control-pin:hover,
+.newtab-control-pin[pinned]:hover {
+	opacity: 0.8 !important;
+}
+.newtab-control-pin:active,
+.newtab-control-pin[pinned]:active {
+	opacity: 0.4 !important;
+}
+.newtab-control-block {
+	background: transparent url("chrome://global/skin/icons/close.png");
+}
+.newtab-control-block:hover {
+	background-position: -16px 0px;
+}
+.newtab-control-block:active {
+	background-position: -32px 0px;
+}

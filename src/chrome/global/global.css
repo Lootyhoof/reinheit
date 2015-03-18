@@ -1,0 +1,216 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ===== global.css =====================================================
+  == Styles that apply everywhere.
+  ======================================================================= */
+
+/* all localizable skin settings shall live here */
+@import url("chrome://global/locale/intl.css");
+@import url("chrome://global/skin/formatting.css");
+@import url("chrome://global/skin/reintoolbar/reintoolbar.css");
+@import url("chrome://global/skin/add-ons/add-ons.css");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: XBL bindings ::::: */
+
+radio {
+	-moz-binding: url("chrome://global/skin/globalBindings.xml#radio");
+}
+menulist > menupopup,
+.menulist-menupopup {
+	-moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
+}
+.menulist-compact {
+	-moz-binding: url("chrome://global/content/bindings/menulist.xml#menulist-compact");
+}
+progressmeter[mode="undetermined"] {
+	-moz-binding: url("chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined");
+}
+
+/* ::::: root elements ::::: */
+
+window,
+page,
+dialog,
+wizard,
+prefwindow {
+	font: message-box;
+	color: -moz-DialogText;
+	background-color: -moz-Dialog;
+}
+window.dialog {
+	padding: 8px;
+}
+[wait-cursor] {
+	cursor: wait !important;
+}
+#main-window #browser{
+	border: none !important;
+}
+
+/* ::::: alert icons :::::*/
+
+.message-icon,
+.alert-icon,
+.error-icon,
+.question-icon {
+	min-width: 32px !important;
+	min-height: 32px !important;
+}
+.message-icon {
+	list-style-image: url("chrome://global/skin/icons/Message.png");
+}
+.alert-icon {
+	list-style-image: url("chrome://global/skin/icons/Warning.png");
+}
+.error-icon {
+	list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+.question-icon {
+	list-style-image: url("chrome://global/skin/icons/Question.png");
+}
+
+/* ::::: iframe ::::: */
+
+iframe {
+	width: 100px;
+	height: 100px;
+	min-width: 10px;
+	min-height: 10px;
+	border: none;
+}
+
+/* ::::: statusbar ::::: */
+
+statusbar {
+	border: none;
+}
+statusbarpanel {
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	margin: 1px !important;
+	padding: 2px !important;
+	border: 1px solid transparent;
+}
+.statusbar-resizerpanel {
+	-moz-box-align: end;
+	-moz-box-pack: end;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.statusbarpanel-iconic,
+.statusbarpanel-menu-iconic {
+	margin: 1px;
+	padding: 2px;
+}
+.statusbarpanel-iconic-text {
+	margin: 0px 1px;
+}
+.statusbarpanel-text {
+	height: 16px;
+	margin: 0px 1px;
+}
+resizer[dir="bottomright"] {
+	cursor: se-resize;
+	background-image: url("chrome://global/skin/icons/resizer.png");
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 2px;
+	-moz-margin-end: 2px;
+}
+statusbar resizer[dir="bottomright"] {
+	margin-bottom: 0px;
+}
+#addon-bar #status-bar statusbarpanel:hover,
+#addon-bar #status-bar statusbarpane[buttonover="true"] {
+	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+}
+
+/* ::::: sidebar ::::: */
+
+sidebarheader {
+	background-color: -moz-Dialog;
+	background-image: url("chrome://global/skin/reintoolbar/stripe.png");
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	height: 25px !important;
+	border: none !important;
+	padding: 0px !important;
+}
+sidebarheader > label {
+	-moz-padding-start: 4px;
+}
+
+/* ::::: miscellaneous ::::: */
+
+.toolbar-focustarget {
+	-moz-user-focus: ignore !important;
+}
+.text-link {
+	color: -moz-nativehyperlinktext;
+	text-decoration: underline;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.text-link:-moz-focusring {
+	border: 1px dotted -moz-DialogText;
+}
+
+/* :::::: autoscroll popup ::::: */
+
+#autoscroller {
+	height: 28px;
+	width: 28px;
+	border: none;
+	margin: -14px;
+	padding: 0px;
+	background-image: url("chrome://global/skin/icons/autoscroll.png");
+	background-color: transparent;
+	background-position: right top;
+	-moz-appearance: none;
+}
+#autoscroller[scrolldir="NS"] {
+	background-position: right center;
+}
+#autoscroller[scrolldir="EW"] {
+	background-position: right bottom;
+}
+

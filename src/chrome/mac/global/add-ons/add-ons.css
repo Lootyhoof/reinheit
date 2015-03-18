@@ -1,0 +1,467 @@
+@import url("chrome://global/skin/add-ons/2ch.css");
+@import url("chrome://global/skin/add-ons/ABP.css");
+@import url("chrome://global/skin/add-ons/AIOS.css");
+@import url("chrome://global/skin/add-ons/NoScript.css");
+@import url("chrome://global/skin/add-ons/Sage.css");
+@import url("chrome://global/skin/add-ons/Scrapbook.css");
+@import url("chrome://global/skin/add-ons/Stylish.css");
+@import url("chrome://global/skin/add-ons/TMP.css");
+@import url("chrome://global/skin/add-ons/WDE.css");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ============================================= */
+/* Akafuku */
+
+#akahuku_preferences_dialog tab {
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	min-width: 50px;
+}
+
+/* ============================================= */
+/* Cookie Whitelist, With Buttons */
+
+#cwwb-record-button,
+#cwwb-add-button {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 16px !important;
+	height: 16px !important;
+	margin: 0px !important;
+	padding-top: 16px;
+}
+#cwwb-record-button[src="chrome://cwwb/skin/record-on.png"] {
+	background-image: url("chrome://global/skin/add-ons/CWWB-C-on.png");
+}
+#cwwb-record-button[src="chrome://cwwb/skin/record-off.png"] {
+	background-image: url("chrome://global/skin/add-ons/CWWB-C-off.png");
+}
+#cwwb-add-button[src="chrome://cwwb/skin/add-on.png"] {
+	background-image: url("chrome://global/skin/add-ons/CWWB-P-on.png");
+}
+#cwwb-add-button[src="chrome://cwwb/skin/add-off.png"] {
+	background-image: url("chrome://global/skin/add-ons/CWWB-P-off.png");
+}
+
+/* ============================================= */
+/* Compact menu 2 */
+
+#menu-button.toolbarbutton-1 {
+	list-style-image: url("chrome://global/skin/add-ons/compact-menu-small.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+toolbar[iconsize="small"] #menu-button.toolbarbutton-1 {
+	list-style-image: url("chrome://global/skin/add-ons/compact-menu-small.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#compact-bk-button {
+	list-style-image: url("chrome://browser/skin/places/starPage.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#nav-bar #compact-menu-menubar > menu[_moz-menuactive="true"],
+#nav-bar #compact-bk-menubar > menu[_moz-menuactive="true"] {
+	background-color: rgba(255,255,255,0.6);
+	background-clip: padding-box;
+	border-color: transparent !important;
+	border-radius: 4px;
+}
+#nav-bar #compact-menu-menubar > menu[_moz-menuactive="true"][open="true"],
+#nav-bar #compact-bk-menubar > menu[_moz-menuactive="true"][open="true"] {
+	background-color: rgba(255,255,255,0.6);
+	background-clip: padding-box;
+	border-color: transparent !important;
+	border-radius: 4px;
+}
+
+/* ============================================= */
+/* Downlpad Statusbar */
+
+#downbarMiniImage,
+#downbarMainMenuImage {
+	list-style-image: url("chrome://browser/skin/Toolbar-small.png") !important;
+	-moz-image-region: rect(0px, 96px, 16px, 80px) !important;
+	max-width: 16px;
+}
+#downbarMiniText {
+	margin: 0px !important;
+}
+#downbarMini,
+#downbarMainMenuButton,
+#downbarClearButton,
+#downbarToMiniButton,
+#downbarToFullButton,
+#downbarClearButtonMini {
+	background: transparent !important;
+	margin: 1px !important;
+	padding: 2px !important;
+	border: 1px solid transparent !important;
+	border-radius: 0px !important;
+}
+#downbarMini:hover,
+#downbarMainMenuButton:hover,
+#downbarClearButton:hover,
+#downbarToMiniButton:hover,
+#downbarToFullButton:hover,
+#downbarClearButtonMini:hover {
+	background: transparent !important;
+	border-color: ThreeDHighlight #CCCCCC #CCCCCC ThreeDHighlight !important;
+}
+#downbarMini:hover:active,
+#downbarMainMenuButton:hover:active,
+#downbarClearButton:hover:active,
+#downbarToMiniButton:hover:active,
+#downbarToFullButton:hover:active,
+#downbarClearButtonMini:hover:active {
+	background: transparent !important;
+	padding-top: 3px !important;
+	padding-bottom: 1px !important;
+	-moz-padding-start: 3px !important;
+	-moz-padding-end: 1px !important;
+	border-color: #CCCCCC ThreeDHighlight ThreeDHighlight #CCCCCC !important;
+}
+#nav-bar #downbarMini {
+	margin: 2px 1px !important;
+}
+#nav-bar #downbarMini:hover,
+#nav-bar #downbarMini:hover:active {
+	margin: 2px 1px !important;
+	background-color: rgba(255,255,255,0.6) !important;
+	border-color: transparent !important;
+	border-radius: 4px !important;
+}
+
+/* ============================================= */
+/* Echofon */
+
+#echofon-statusbar-button,
+window #echofon-toolbar-button,
+toolbar[iconsize="small"] #echofon-toolbar-button {
+	list-style-image: url("chrome://global/skin/add-ons/echofon-dis.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#echofon-statusbar-button[state="active"],
+window #echofon-toolbar-button[state="active"],
+toolbar[iconsize="small"] #echofon-toolbar-button[state="active"] {
+	list-style-image: url("chrome://global/skin/add-ons/echofon.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#echofon-statusbar-button[state="error"],
+window #echofon-toolbar-button[state="error"],
+toolbar[iconsize="small"] #echofon-toolbar-button[state="error"] {
+	list-style-image: url("chrome://global/skin/add-ons/echofon-error.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#twitternotifier-statusbar-text {
+	margin: 0px !important;
+}
+
+/* Preference */
+
+#echofon-preference {
+	height: 48em;
+}
+radio[pane=paneAccounts] {
+	list-style-image: url("chrome://browser/skin/preferences/Options.png") !important;
+	-moz-image-region: rect(0px, 160px, 32px, 128px) !important;
+}
+
+/* ============================================= */
+/* fileFTP */
+
+#fireftp-button{
+	list-style-image: url("chrome://global/skin/add-ons/file-ftp.png") !important;
+}
+#appmenu_fireftp,
+#fireftptoolsmenu,
+#fireftpcontentarea,
+#fireftpcontextmenu,
+toolbar[iconsize="small"] #fireftp-button {
+	list-style-image: url("chrome://global/skin/add-ons/file-ftp-small.png") !important;
+}
+
+/* ============================================= */
+/* Flashblock */
+
+#flashblockToggle-button,
+#flashblockToggle-button[state="enabled"],
+toolbar[iconsize="small"] #flashblockToggle-button[state="enabled"],
+multibar #flashblockToggle-button[state="enabled"] {
+	list-style-image: url("chrome://global/skin/add-ons/flashblock-on.png") !important;
+}
+#flashblockToggle-button[state="disabled"],
+toolbar[iconsize="small"] #flashblockToggle-button[state="disabled"],
+multibar #flashblockToggle-button[state="disabled"] {
+	list-style-image: url("chrome://global/skin/add-ons/flashblock-off.png") !important;
+}
+#flashblockToggle-button[disabled="true"],
+toolbar[iconsize="small"] #flashblockToggle-button[disabled="true"],
+multibar #flashblockToggle-button[disabled="true"] {
+	list-style-image: url("chrome://global/skin/add-ons/flashblock-dis.png") !important;
+}
+
+/* ============================================= */
+/* Greasemonkey & Scriptish */
+
+#greasemonkey-tbb,
+#scriptish-button {
+	list-style-image: url("chrome://global/skin/add-ons/greasemonkey.png") !important;
+}
+toolbar[iconsize="small"] #greasemonkey-tbb,
+toolbar[iconsize="small"] #scriptish-button {
+	list-style-image: url("chrome://global/skin/add-ons/greasemonkey.png") !important;
+}
+#greasemonkey-tbb[disabled="yes"],
+toolbar[iconsize="small"] #greasemonkey-tbb[disabled="yes"],
+#scriptish-button[scriptish-disabled],
+toolbar[iconsize="small"] #scriptish-button[scriptish-disabled] {
+	list-style-image: url("chrome://global/skin/add-ons/greasemonkey-dis.png") !important;
+	opacity: 1 !important;
+}
+#greasemonkey-tbb[disabled="yes"] .toolbarbutton-icon {
+	opacity: 1 !important;
+}
+#greasemonkey-tbb[disabled="yes"] .toolbarbutton-text,
+#scriptish-button[scriptish-disabled] .toolbarbutton-text {
+	color: GrayText !important;
+}
+
+/* menu & addon bar */
+
+#gm-status-image,
+#scriptish_general_menu > .menu-iconic-left > .menu-iconic-icon {
+	background-image: url("chrome://global/skin/add-ons/greasemonkey.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 16px !important;
+	height: 16px !important;
+	margin: 0px !important;
+	padding-top: 16px;
+}
+#gm-status-image[src$="icon_small_disabled.png"],
+#scriptish_general_menu > .menu-iconic-left > .menu-iconic-icon[src="chrome://scriptish/skin/scriptish16_disabled.png"] {
+	background-image: url("chrome://global/skin/add-ons/greasemonkey-dis.png");
+}
+
+/* addon panel */
+
+#category-scripts > .category-icon,
+#category-userscript > .category-icon,
+.addon[type=user-script] .icon,
+#detail-view[type=user-script] #detail-icon {
+	list-style-image: url("chrome://global/skin/add-ons/greasemonkey-addon.png") !important;
+}
+
+/* ============================================= */
+/* JSActions */
+
+/* Action Folder Icon */
+
+menu#JsActionsMenu {
+	list-style-image: url("chrome://global/skin/add-ons/jsactions-script-folder.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+menu#JsActionsMenu:hover {
+	-moz-image-region: rect(16px, 16px, 32px, 0px) !important;
+}
+
+/* Sub Folder Icon */
+
+menu#jsaSubFolder {
+	list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+menu#jsaSubFolder:hover {
+	-moz-image-region: rect(16px, 32px, 32px, 16px) !important;
+}
+
+/* Script Icon */
+
+menuitem#jsaScript {
+	list-style-image: url("chrome://global/skin/add-ons/jsactions-script.png") !important;
+}
+
+/* ============================================= */
+/* NewLiveWall! */
+
+#nlwIcon .statusbarpanel-icon {
+	background-image: url("chrome://global/skin/add-ons/NLW.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 16px !important;
+	height: 16px !important;
+	margin: 0px !important;
+	padding-top: 16px;
+}
+#nlwIcon .statusbarpanel-icon[src$="icon_disable.png"] {
+	background-image: url("chrome://global/skin/add-ons/NLW-dis.png");
+}
+
+/* ============================================= */
+/* NicoFox */
+
+#nicofox-toolbar-button {
+	list-style-image: url("chrome://global/skin/add-ons/nicofox.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#nicofox-icon {
+	background-image: url("chrome://global/skin/add-ons/nicofox.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 16px !important;
+	height: 16px !important;
+	margin: 0px !important;
+	padding-top: 16px;
+}
+#nicofoxStatusbarLabel {
+	margin: 0px 2px !important;
+}
+
+/* ============================================= */
+/* QuickNote */
+
+#quicknote-button,
+#quicknote-button:hover,
+toolbar[iconsize="small"] #quicknote-button,
+toolbar[iconsize="small"] #quicknote-button:hover,
+.icon-quicknote16,
+.qnicon,
+#confirmsave {
+	list-style-image: url("chrome://global/skin/add-ons/quick-note.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+.qn_tabpanels {
+	border: none !important;
+}
+#quicknote-main #tabbox > hbox {
+	background-color: #CCCCCC;
+	background-image: url("chrome://global/skin/reintoolbar/shadow-top.png");
+	background-position: 0% 0%;
+	background-repeat: repeat-x;
+}
+.icon-quicknote16 {
+	padding: 2px !important;
+}
+.icon-quicknote16 .toolbarbutton-icon {
+	margin: 0px !important;
+}
+#tabbox > hbox .icon-quicknote16:hover {
+	background-color: rgba(255,255,255,0.3);
+	background-clip: padding-box;
+	border-color: transparent !important;
+	border-radius: 4px;
+}
+#quicknote-main .save {
+	list-style-image: url("chrome://global/skin/add-ons/scrap-book-save.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#quicknote-main .saveas {
+	list-style-image: url("chrome://global/skin/add-ons/foxage-toolbar.png") !important;
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+
+/* ============================================= */
+/* Radikox */
+
+#radikox_toolbarbutton,
+toolbar[iconsize="large"] #radikox_toolbarbutton {
+	list-style-image: url("chrome://global/skin/add-ons/radikox-dis.png") !important;
+}
+#radikox_toolbarbutton[tooltiptext],
+toolbar[iconsize="large"] #radikox_toolbarbutton[tooltiptext] {
+	list-style-image: url("chrome://global/skin/add-ons/radikox.png") !important;
+}
+#radikox_statusbarpanel {
+	color: GrayText;
+}
+#radikox_statusbarpanel[tooltiptext] {
+	color: -moz-DialogText!important;
+}
+
+/* ============================================= */
+/* RequestPolicy */
+
+#palette-box #requestpolicyToolbarButton {
+	list-style-image: url("chrome://global/skin/add-ons/request-policy.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#requestpolicyStatusbar {
+	margin: 1px !important;
+	padding: 2px !important;
+}
+#requestpolicyStatusbar,
+#requestpolicyStatusbar[iconStyle="large"],
+toolbar #requestpolicyToolbarButton,
+toolbar[iconsize="small"] #requestpolicyToolbarButton,
+#requestpolicyContextMenu {
+	list-style-image: url("chrome://global/skin/add-ons/request-policy.png") !important;
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#requestpolicyStatusbar[requestpolicyBlocked="true"],
+#requestpolicyStatusbar[iconStyle="large"][requestpolicyBlocked="true"],
+toolbar[requestpolicyBlocked="true"] #requestpolicyToolbarButton,
+toolbar[iconsize="small"][requestpolicyBlocked="true"] #requestpolicyToolbarButton,
+#requestpolicyContextMenu[requestpolicyBlocked="true"] {
+	list-style-image: url("chrome://global/skin/add-ons/request-policy.png") !important;
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+
+#requestpolicyStatusbar[requestpolicyPermissive="true"],
+#requestpolicyStatusbar[iconStyle="large"][requestpolicyPermissive="true"],
+toolbar[requestpolicyPermissive="true"] #requestpolicyToolbarButton,
+toolbar[iconsize="small"][requestpolicyPermissive="true"] #requestpolicyToolbarButton,
+#requestpolicyContextMenu[requestpolicyPermissive="true"] {
+	list-style-image: url("chrome://global/skin/add-ons/request-policy.png") !important;
+}
+
+/* menu */
+
+#requestpolicyOtherOrigins {
+	list-style-image: url("chrome://global/skin/add-ons/request-policy.png") !important;
+	-moz-image-region: rect(0px, 64px, 16px, 48px) !important;
+}
+
+/* Request Log */
+
+#requestpolicy-requestLog-close {
+	list-style-image: url("chrome://global/skin/icons/close.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#requestpolicy-requestLog-close:hover {
+	-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+}
+#requestpolicy-requestLog-close:hover:active {
+	-moz-image-region: rect(0px, 48px, 16px, 32px) !important;
+}
+
+/* ============================================= */
+/* RSS Icon In Awesombar */
+
+#jprss-button,
+#jprss-button:hover,
+#jprss-button[open="true"],
+#jprss-button:hover:active {
+	list-style-image: url("chrome://browser/skin/page-livemarks.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+
+/* ============================================= */
+/* Secure Login */
+
+#secureLoginButton,
+.secureLoginButton,
+toolbar[iconsize="small"] #secureLoginButton,
+toolbar[iconsize="small"] .secureLoginButton,
+.secureLoginIcon {
+	list-style-image: url("chrome://global/skin/add-ons/secure-login.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#secureLoginButton.secureLoginButtonDisabled,
+.secureLoginButtonDisabled,
+toolbar[iconsize="small"] #secureLoginButton.secureLoginButtonDisabled,
+toolbar[iconsize="small"] .secureLoginButtonDisabled,
+.secureLoginIconDisabled {
+	list-style-image: url("chrome://global/skin/add-ons/secure-login-dis.png") !important;
+	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+

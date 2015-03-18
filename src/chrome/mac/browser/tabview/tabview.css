@@ -1,0 +1,513 @@
+
+body {
+	font: message-box;
+	font-size: 1em;
+	color: -moz-FieldText;
+	background-image: url("chrome://global/skin/reintoolbar/back-light-b.png");
+}
+
+/* tabs */
+
+.tab {
+	cursor: pointer;
+	color: -moz-FieldText;
+	background-color: rgba(255,255,255,0.6);
+	margin: 3px;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	-moz-padding-start: 4px;
+	-moz-padding-end: 6px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+.tab canvas,
+.cached-thumb {
+	border: 1px solid rgba(0,0,0,0.2);
+}
+.thumb {
+	background-color: #ffffff;
+}
+.favicon {
+	background-color: rgba(255,255,255,0.7);
+	top: 4px;
+	left: 4px;
+	height: 16px;
+	width: 16px;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	-moz-padding-start: 4px;
+	-moz-padding-end: 6px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	-moz-border-end: 1px solid rgba(0,0,0,0.2);
+}
+html[dir=ltr] .favicon {
+	border-bottom-right-radius: 3px;
+}
+html[dir=rtl] .favicon {
+	border-bottom-left-radius: 3px;
+	left: auto;
+	right: 4px;
+}
+.favicon img {
+	border: none;
+	width: 16px;
+	height: 16px;
+}
+.close {
+	top: 6px;
+	right: 6px;
+	width: 16px;
+	height: 16px;
+	background-image: -moz-image-rect(url("chrome://global/skin/icons/close.png"), 0, 16, 16, 0);
+}
+.close:hover {
+	background-image: -moz-image-rect(url("chrome://global/skin/icons/close.png"), 0, 32, 16, 16);
+}
+.close:hover:active {
+	background-image: -moz-image-rect(url("chrome://global/skin/icons/close.png"), 0, 48, 16, 32);
+}
+html[dir=rtl] .close {
+	right: auto;
+	left: 6px;
+}
+.expander {
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	background-image: url("chrome://global/skin/icons/resizer.png");
+	background-repeat: no-repeat;
+	bottom: 6px;
+	right: 6px;
+	width: 16px;
+	height: 16px;
+	opacity: 1;
+}
+html[dir=rtl] .expander {
+	right: auto;
+	left: 6px;
+	transform: scaleX(-1);
+}
+.expander:hover,
+.appTabIcon:hover {
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	opacity: 1.0;
+}
+.favicon img:hover, 
+.close img:hover, 
+.expander img:hover {
+	opacity: 1;
+	border: none;
+}
+.tab-title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	bottom: 4px;
+	width: 72%;
+	min-width: 0px;
+	margin: 0px 20% 0px 0px;
+	padding: 2px 4px;
+	border-top-right-radius: 3px;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	-moz-border-end: 1px solid rgba(0,0,0,0.2);
+}
+.stacked {
+	padding: 0;
+}
+.stacked .thumb {
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+.stack-trayed .thumb {
+	box-shadow: none !important;
+}
+.tab.focus {
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+
+/* tab: zooming */
+
+.front .tab-title, 
+.front .close, 
+.front .favicon, 
+.front .expander, 
+.front .thumb-shadow {
+	display: none;
+}
+.front .thumb {
+	box-shadow: none !important;
+}
+.front.focus {
+	box-shadow: none !important;
+}
+
+/* tab group item */
+
+.tabInGroupItem {
+	box-shadow: none;
+	background-color: rgba(255,255,255,0.6);
+	margin: 4px;
+}
+.tabInGroupItem .favicon {
+	background-color: rgba(255,255,255,0.6);
+}
+.groupItem {
+	cursor: move;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 3px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+.groupItem.activeGroupItem {
+	box-shadow: 0px 0px 6px rgba(30,170,220,0.6);
+}
+.groupItem .close {
+	z-index: 10;
+}
+.dragRegion {
+	background: rgba(224,234,245,0.4);
+}
+.overlay {
+	background-color: rgba(0,0,0,0.7) !important;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	border-radius: 3px;
+}
+.appTabTrayContainer {
+	text-align: start;
+	line-height: 0px;
+	overflow: -moz-hidden-unscrollable;
+	top: 34px;
+	right: 1px;
+	padding: 0 5px;
+	-moz-border-start: 1px dotted rgba(0,0,0,0.2);
+}
+html[dir=rtl] .appTabTrayContainer {
+	right: auto;
+	left: 1px;
+}
+.appTabTray {
+	display: inline-block;
+	-moz-column-width: 16px;
+	-moz-column-gap: 5px;
+}
+.appTabTrayContainerTruncated {
+	padding-bottom: 7px;
+}
+.appTabTrayContainerTruncated:after {
+	display: block;
+	position: absolute;
+	content: "…";
+	line-height: 15px;
+	font-size: 15px;
+	text-align: center;
+	bottom: 2px;
+	left: 0px;
+	width: 100%;
+	height: 15px;
+}
+.appTabIcon {
+	display: block;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	padding-bottom: 3px;
+	opacity: 0.8;
+}
+.undo {
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	color: rgba(0,0,0,0.8);
+	background-color: rgba(255,255,255,0.6);
+	width: 220px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+.undo:hover {
+	background-color: rgba(255,255,255,0.8);
+}
+.undo .close {
+	top: 7px;
+	left: 4px;
+	opacity: 0.5;
+}
+html[dir=rtl] .undo .close {
+	left: auto;
+	right: 4px;
+}
+.undo .close:hover{
+	opacity: 1.0;
+}
+
+/* info items */
+
+.info-item {
+	cursor: move;
+	border: 1px solid rgba(230,230,230,1);
+	background-color: rgba(248,248,248,1);
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px rgba(255,255,255,0.6) inset, 0px 0px 3px rgba(0,0,0,0.2);
+}
+.intro {
+	margin: 10px;
+}
+
+/* trenches */
+
+.guideTrench {
+	opacity: 0.9;
+	border: 1px dashed rgba(0,0,0,0.12);
+	border-bottom: none;
+	-moz-border-end: none;
+	box-shadow: 1px 1px 0 rgba(255,255,255,0.15);
+}
+html[dir=rtl] .guideTrench {
+	box-shadow: -1px 1px 0 rgba(255,255,255,0.15);
+}
+.visibleTrench {
+	opacity: 0.05;
+}
+.activeVisibleTrench {
+	opacity: 0;
+}
+.activeVisibleTrench.activeTrench {
+	opacity: 0.45;
+}
+.visibleTrench.border, 
+.activeVisibleTrench.border {
+	background-color: red;
+}
+.visibleTrench.guide, 
+.activeVisibleTrench.guide {
+	background-color: blue;
+}
+
+/* other */
+
+.newTabButton {
+	cursor: pointer;
+	background: -moz-image-rect(url("chrome://browser/skin/tabbrowser/newtab.png"), 0, 16, 16, 0);
+	left: 10px;
+	bottom: 10px;
+	width: 16px;
+	height: 15px;
+	opacity: 0.5;
+}
+html[dir=rtl] .newTabButton {
+	left: auto;
+	right: 10px;
+}
+.newTabButton:hover {
+	opacity: 1;
+}
+.active {
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.acceptsDrop {
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+}
+.titlebar {
+	font-size: 12px;
+	height: 18px;
+}
+input.name {
+	background: transparent;
+	border: 1px solid transparent;
+	color: #444444;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	-moz-margin-end: 0px;
+	-moz-margin-start: 3px;
+	padding: 1px;
+}
+html[dir=rtl] input.name {
+	background-position: right top;
+}
+input.name:focus {
+	color: #444444;
+}
+.title-container:hover input.name,
+.title-container input.name:focus {
+	border: 1px solid rgba(0,0,0,0.5);
+}
+.title-container:hover input.name-locked {
+	cursor: default;
+	border: 1px solid transparent !important;
+}
+input.name::-moz-placeholder {
+	font-style: italic !important;
+	color: transparent;
+	background-image: url("chrome://browser/skin/tabview/edit-light.png");
+	background-repeat: no-repeat;
+	-moz-padding-start: 20px;
+}
+.title-container:hover input.name:-moz-placeholder {
+	color: #777777;
+}
+.title-shield {
+	cursor: text;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	-moz-margin-end: 0px;
+	-moz-margin-start: 3px;
+	padding: 1px;
+}
+html[dir=rtl] .title-shield {
+	left: auto;
+	right: 0px;
+}
+.transparentBorder {
+	border: 1px solid transparent !important;
+}
+.stackExpander {
+	cursor: pointer;
+	bottom: 8px;
+	background-image: -moz-image-rect(url("chrome://browser/skin/tabview/stack-expander.png"), 0, 48, 24, 24);
+	width: 24px;
+	height: 24px;
+}
+.stackExpander:hover {
+	background-image: -moz-image-rect(url("chrome://browser/skin/tabview/stack-expander.png"), 0, 24, 24, 0);
+}
+
+/* resizable */
+
+.resizer {
+	background-image: url("chrome://global/skin/icons/resizer.png");
+	width: 16px;
+	height: 16px;
+	bottom: 4px;
+	right: 4px;
+}
+html[dir=rtl] .resizer {
+	right: auto;
+	left: 4px;
+	transform: scaleX(-1);
+}
+.iq-resizable-handle {
+	font-size: 0.1px;
+}
+.iq-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	right: -2px;
+	bottom: -2px;
+}
+html[dir=rtl] .iq-resizable-se {
+	cursor: sw-resize;
+	right: auto;
+	left: 1px;
+}
+
+/* actions button */
+
+#actions{
+	text-align: center;
+	background-color: rgba(255,255,255,0.6);
+	top: 5px;
+	width: 30px;
+	padding-top: 3px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+}
+html[dir=rtl] #actions {
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+}
+#actions #exit-button {
+	background-color: transparent;
+	background-image: url("chrome://browser/skin/tabview/tabview.png");
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin: 1px;
+	padding: 2px;
+	border: none;
+}
+#actions #searchbutton{
+	background: transparent url("chrome://browser/skin/tabview/search.png");
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+	padding: 1px;
+	border: none;
+}
+
+/* search */
+
+#searchshade{
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+}
+#search{
+	width: 100%;
+	height: 100%;
+}
+#searchbox{
+	width: 270px;
+	height: 30px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4) inset, 0px 0px 9px rgba(0,0,0,0.8);
+	color: white;
+	border: none;
+	background-color: #404040;
+	border-radius: 3px;
+	-moz-padding-start: 5px;
+	-moz-padding-end: 5px;
+	font-size: 14px;
+}
+.notMainMatch{
+	opacity: 0.7;
+}
+#otherresults {
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: 0px -1px 0px rgba(255,255,255,0.1), 0px 2px 5px rgba(0,0,0,0.3) inset;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+}
+html[dir=rtl] #otherresults {
+	left: auto;
+	right: 0px;
+}
+#otherresults .label {
+	color: #999999;
+	line-height: 30px;
+	-moz-margin-start: 5px;
+	-moz-margin-end: 5px;
+}
+.inlineMatch {
+	cursor: pointer;
+	background-color: #ebebeb;
+	height: 20px;
+	-moz-margin-end: 5px;
+	-moz-padding-start: 3px;
+	-moz-padding-end: 3px;
+	border: 1px solid rgba(255,255,255,0.5);
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+.inlineMatch:hover {
+	opacity: 1;
+}
+.inlineMatch > img {
+	position: relative;
+	top: 2px;
+	-moz-margin-end: 5px;
+}
+.inlineMatch > span {
+	max-width: 200px;
+	height: 15px;
+}

@@ -1,0 +1,52 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.wizard-header {
+	color: WindowText;
+	background-color: Window;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.wizard-header-box-1 {}
+
+wizard[description=""] .wizard-header-description {
+	display: none;
+}
+.wizard-header-label {
+	-moz-margin-start: 23px;
+	font-weight: bold;
+}
+.wizard-header-description {
+	-moz-margin-start: 44px;
+}
+wizard[branded="true"] .wizard-header-icon {
+	list-style-image: url("chrome://branding/content/icon48.png");
+	-moz-margin-end: 5px;
+}
+.wizard-page-box {
+	margin: 10px 44px;
+}
+.wizard-buttons-separator {
+	margin-bottom: 0px !important;
+}
+.wizard-buttons-box-2 {
+	min-height: 32px;
+	padding: 2px 10px 5px 10px;
+}
+.wizard-button[wizardbutton="finish"],
+.wizard-button[wizardbutton="next"] {
+	-moz-margin-start: -1px !important;
+}
+.wizard-button[wizardbutton="back"] {
+	-moz-margin-end: 0px !important;
+}
+wizard #dataSources {
+	-moz-appearance: none !important;
+	color: -moz-FieldText;
+	background-color: -moz-Field;
+	margin: 2px 4px;
+	border: 2px solid !important;
+	-moz-border-top-colors: -moz-Dialog #CCCCCC;
+	-moz-border-right-colors: -moz-Dialog #CCCCCC;
+	-moz-border-bottom-colors: -moz-Dialog #CCCCCC;
+	-moz-border-left-colors: -moz-Dialog #CCCCCC;
+}

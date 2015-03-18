@@ -1,0 +1,46 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+notification {
+	color: #ffffff;
+	background-color: rgb(128,200,210);
+	border-top: 0px solid transparent;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+}
+notification[type="info"] {}
+notification[type="critical"] {
+	background-color: red;
+}
+.notification-inner {
+	padding: 1px;
+	border: none !important;
+}
+.messageImage {
+	width: 16px;
+	height: 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	-moz-margin-start: 5px;
+	-moz-margin-end: 1px;
+}
+.messageText {
+	font-weight: bold;
+	margin: 5px !important;
+}
+.messageButton {
+	margin: 0px 5px;
+}
+.messageCloseButton {
+	list-style-image: url("chrome://global/skin/icons/close.png");
+	-moz-appearance: none;
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+	padding: 4px 2px;
+	border: none !important;
+}
+.messageCloseButton:hover {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.messageCloseButton:hover:active {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}

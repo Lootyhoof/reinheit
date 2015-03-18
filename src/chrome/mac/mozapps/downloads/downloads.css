@@ -1,0 +1,83 @@
+
+#downloadManager {
+	background-color: ThreeDFace;
+}
+
+/* Clear list Button */
+
+#clearListButton {
+	list-style-image: url("chrome://global/skin/console/bullet-clear.png");
+	margin: 0px;
+	-moz-margin-end: 5px;
+}
+
+/* Download View */
+
+#downloadView {
+	-moz-appearance: none !important;
+	margin: 0px;
+	border-top: none !important;
+	border-bottom: 1px solid #CCCCCC !important;
+	-moz-border-start: none !important;
+	-moz-border-end: none !important;
+}
+
+/* Download View Items */
+
+richlistitem[type="download"] {
+	min-height: 46px;
+	padding-top: 4px;
+	padding: 4px;
+	-moz-padding-start: 4px;
+	-moz-padding-end: 8px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+richlistitem[type="download"] .name {
+	font-size: larger;
+}
+richlistitem[type="download"][selected="true"] {
+	color: -moz-FieldText !important;
+	background-color: transparent !important;
+	background-image: url("chrome://global/skin/reintoolbar/dot.png") !important;
+}
+.mini-button {
+	-moz-appearance: none;
+	list-style-image: url("chrome://mozapps/skin/downloads/downloadButtons.png");
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	min-width: 0px;
+	min-height: 0px;
+}
+.mini-button > .button-box {
+	padding: 0 !important;
+}
+.cancel {
+	-moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.pause {
+	-moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+.pause[disabled="true"] {
+	opacity: 0.5;
+}
+.resume {
+	-moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+.retry {
+	-moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+.blockedIcon {
+	list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+
+/* prevent flickering when changing states */
+
+.downloadTypeIcon {
+	min-height: 32px;
+	min-width: 32px;
+}
+#searchbox[empty] {
+	color: GrayText;
+}
