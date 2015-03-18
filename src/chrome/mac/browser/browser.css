@@ -619,6 +619,15 @@ toolbar[mode="full"] .toolbarbutton-menubutton-button {
 	opacity: 0.5;
 }
 
+/* download status button */
+#status4evar-download-button #status4evar-download-icon,
+#status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"),
+                              0, 144, 24, 120) !important;
+  width:24px;
+  height:24px;
+}
+
 /* history sidebar button */
 
 #history-button {
@@ -788,6 +797,17 @@ toolbar[iconsize="small"] #downloads-button {
 toolbar[iconsize="small"] #downloads-button[disabled="true"] {
 	opacity: 0.5;
 }
+
+/* download status button */
+
+toolbar[iconsize="small"] #status4evar-download-button #status4evar-download-icon,
+toolbar[iconsize="small"] #status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
+                              0, 96, 16, 80) !important;
+  width:16px;
+  height:16px;
+}
+
 
 /* history sidebar button */
 
