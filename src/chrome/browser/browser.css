@@ -64,6 +64,15 @@
 	background-repeat: repeat-x;
 }
 
+/* Use OS native menubar theming */
+
+#main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
+    color: CaptionText;
+  }
+  #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme):-moz-window-inactive {
+    color: InactiveCaptionText;
+  }
+
 /* ::::: aero style ::::: */
 
 @media all and (-moz-windows-compositor) {
