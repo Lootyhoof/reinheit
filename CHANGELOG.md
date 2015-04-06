@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.3
+- fix titlebar position (again)
+
 ### 1.0.2
 - fix titlebar position
 - improve menu bar colours (again)
