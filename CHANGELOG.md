@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.4
+- actually fix titlebar position this time
+
 ### 1.0.3
 - fix titlebar position (again)
 
