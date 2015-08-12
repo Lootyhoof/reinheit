@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.1.0
+- fix mixed-state padlock
+- fix window borders on Windows 10
+- Linux: style appmenu
+
 ### 1.0.4
 - actually fix titlebar position this time
 
