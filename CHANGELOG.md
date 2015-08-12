@@ -1,6 +1,7 @@
 # Changelog
 
 ### 1.1.0
+- Pale Moon v26 compatibility
 - fix mixed-state padlock
 - fix window borders on Windows 10
 - Linux: style appmenu
