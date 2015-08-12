@@ -202,7 +202,8 @@
 
 /* ::::: app menu button ::::: */
 
-#appmenu-button {
+#appmenu-button,
+#appmenu-toolbar-button {
 	-moz-appearance: none;
 	background: transparent;
 	background-clip: padding-box;
@@ -226,35 +227,45 @@
 #main-window[sizemode="maximized"] #appmenu-button {
 	margin: 3px 0px 0px 3px;
 }
-#appmenu-button:hover:not(:active):not([open]) {
+#appmenu-button:hover:not(:active):not([open]),
+#appmenu-toolbar-button:hover:not(:active):not([open]) {
 	background: linear-gradient(rgb(148,200,210), rgb(138,200,210) 95%);
 	box-shadow: 0px 0px 1px rgba(255,255,255,0.9) inset, 0px 0px 2px rgba(255,255,255,0.3) inset;
 }
 #appmenu-button:hover:active,
-#appmenu-button[open] {
+#appmenu-button[open],
+#appmenu-toolbar-button:hover:active,
+#appmenu-toolbar-button[open] {
 	background: linear-gradient(rgb(128,200,210), rgb(118,200,210) 95%);
 	box-shadow: 0px 0px 1px rgba(255,255,255,0.5) inset, 0px 2px 3px rgba(0,0,0,0.3) inset, 0px 1px 1px rgba(0,0,0,0.1) inset;
 }
-#main-window[privatebrowsingmode=temporary] #appmenu-button {
+#main-window[privatebrowsingmode=temporary] #appmenu-button,
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button  {
 	background: linear-gradient(rgb(220,190,190), rgb(190,160,160) 95%);
 }
-#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]) {
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]),
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:not(:active):not([open]) {
 	background: linear-gradient(rgb(220,170,170), rgb(190,140,140) 95%);
 }
 #main-window[privatebrowsingmode=temporary] #appmenu-button:hover:active,
-#main-window[privatebrowsingmode=temporary] #appmenu-button[open] {
+#main-window[privatebrowsingmode=temporary] #appmenu-button[open],
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button[open] {
 	background: linear-gradient(rgb(220,160,160), rgb(190,130,130) 95%);
 }
-#appmenu-button > .button-box {
+#appmenu-button > .button-box,
+#appmenu-toolbar-button > .toolbarbutton-icon {
 	list-style-image: url("chrome://global/skin/add-ons/compact-menu-small.png");
 	border-style: none;
 	margin: 0px;
 	padding: 0px;
 }
-#appmenu-button > .button-box .button-text {
+#appmenu-button > .button-box .button-text,
+#appmenu-toolbar-button > .toolbarbutton-text {
 	display: none;
 }
-#appmenu-button > .button-box > .button-menu-dropmarker {
+#appmenu-button > .button-box > .button-menu-dropmarker,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
 	display: none;
 }
 
