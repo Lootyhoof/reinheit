@@ -51,6 +51,7 @@ panel {
 	min-width: 1px;
 	padding: 2px;
 	border: 1px solid #CCCCCC;
+	color: MenuText;
 }
 menupopup {
 	-moz-appearance: none;
