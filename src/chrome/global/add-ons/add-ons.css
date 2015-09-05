@@ -248,7 +248,10 @@ toolbar[iconsize="small"] #scriptish-button[scriptish-disabled] {
 #category-scripts > .category-icon,
 #category-userscript > .category-icon,
 .addon[type=user-script] .icon,
-#detail-view[type=user-script] #detail-icon {
+#detail-view[type=user-script] #detail-icon,
+#category-greasemonkey-user-script > .category-icon,
+.addon[type=greasemonkey-user-script] .icon,
+#detail-view[type=greasemonkey-user-script] #detail-icon {
 	list-style-image: url("chrome://global/skin/add-ons/greasemonkey-addon.png") !important;
 }
 
