@@ -344,15 +344,11 @@
 	#main-window[chromemargin] #navigator-toolbox toolbar {
 		background-color: rgba(255,255,255,0.6);
 	}
-	#main-window[chromemargin] #toolbar-menubar {
-		border-radius: 3px;
-	}
+
 	#main-window[chromemargin] #nav-bar {
 		background-image: url("chrome://global/skin/reintoolbar/stripe.png");
 		background-position: 0% 0%;
 		background-repeat: repeat;
-		border-top-left-radius: 3px;
-		border-top-right-radius: 3px;
 	}
 	#main-window[chromemargin][disablechrome="true"][tabsontop="true"] toolbox {
 		background-image: none !important;
@@ -385,7 +381,17 @@
 		border-bottom-left-radius: 3px;
 		border-bottom-right-radius: 3px;
 	}
+	
+    #main-window[chromemargin] #nav-bar {
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+    }
+	
+	#main-window[chromemargin] #toolbar-menubar {
+		border-radius: 3px;
+	}
   }
+
 	#allTabs-panel,
 	#ctrlTab-panel {
 		-moz-appearance: -moz-win-glass;
