@@ -168,6 +168,15 @@ toolbarbutton[checked="true"] {
 	box-shadow: 0px 0px 1px rgba(0,0,0,0.5) inset, 0px 0px 8px rgba(0,0,0,0.3) inset;
 }
 
+toolbarbutton:-moz-lwtheme {
+  -moz-appearance: none;
+}
+
+toolbarbutton:-moz-lwtheme:not([disabled="true"]) {
+  color: inherit;
+  text-shadow: inherit;
+}
+
 /* ::::: toolbarbutton menu ::::: */
 
 toolbarbutton[type="menu-button"] {

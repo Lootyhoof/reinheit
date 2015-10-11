@@ -181,6 +181,19 @@ sidebarheader > label {
 
 /* ::::: miscellaneous ::::: */
 
+:root:-moz-lwtheme,
+[lwthemefooter="true"] {
+  -moz-appearance: none;
+}
+
+:root:-moz-lwtheme-darktext {
+  text-shadow: 0 -0.5px 1.5px white;
+}
+
+:root:-moz-lwtheme-brighttext {
+  text-shadow: 1px 1px 1.5px black;
+}
+
 .toolbar-focustarget {
 	-moz-user-focus: ignore !important;
 }

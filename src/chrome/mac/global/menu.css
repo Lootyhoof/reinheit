@@ -71,6 +71,25 @@ menuitem.spell-suggestion {
 	font-weight:bold;
 }
 
+menubar > menu:-moz-lwtheme {
+  -moz-appearance: none;
+  border-style: none;
+}
+
+menubar > menu:-moz-lwtheme:not([disabled="true"]) {
+  color: inherit !important;
+}
+
+menubar > menu:-moz-lwtheme[_moz-menuactive="true"]:not([disabled="true"]) {
+  background-color: Highlight;
+  color: HighlightText !important;
+  text-shadow: none;
+}
+
+menubar > menu:-moz-window-inactive {
+  color: ThreeDShadow;
+}
+
 /* ..... internal content .... */
 
 .menu-text,

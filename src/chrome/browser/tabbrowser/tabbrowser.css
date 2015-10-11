@@ -1,7 +1,7 @@
 
 /* ::::: tabbrowser tabs ::::: */
 
-#TabsToolbar {
+#TabsToolbar:not(:-moz-lwtheme) {
 	background-color: ThreeDShadow;
 	background-image: url("chrome://global/skin/reintoolbar/shadow-top.png");
 	background-position: 0% 0%;
@@ -14,6 +14,7 @@
 	background: transparent !important;
 	padding: 0px;
 	border: none !important;
+	text-shadow: none !important;
 }
 
 /* ::::: tab ::::: */
@@ -22,6 +23,10 @@
 	-moz-appearance: none !important;
 	min-width: 26px;
 	padding: 1px 2px;
+}
+.tabbrowser-tab:-moz-lwtheme {
+	background-color: rgba(255,255,255,0.6);
+	background-clip: padding-box;
 }
 .tabbrowser-tab[pinned] {
 	min-height: 26px;
