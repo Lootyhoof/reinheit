@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.1.1
+- (Win10) round corner removal on certain UI elements
+- (Win10) shade window background on Pale Moon 26 builds later than b2
+- style Greasemonkey category in Add-Ons Manager
+- further persona support
+
 ### 1.1.0
 - Pale Moon v26 compatibility
 - fix mixed-state padlock
