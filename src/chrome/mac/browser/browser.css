@@ -818,6 +818,16 @@ toolbar[iconsize="small"] #history-button[disabled="true"] {
 	opacity: 0.5;
 }
 
+/* history menu button */
+
+#history-menu-button {
+	-moz-box-orient: horizontal;
+	list-style-image: url("chrome://browser/skin/places/history.png")
+}
+#history-menu-button[disabled="true"] {
+	opacity: 0.5;
+}
+
 /* bookmark sidebar button */
 
 toolbar[iconsize="small"] #bookmarks-button {
