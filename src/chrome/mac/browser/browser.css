@@ -539,12 +539,20 @@ menuitem.bookmark-item {
 /* ::::: primary toolbar buttons ::::: */
 
 .toolbarbutton-1 {
-	-moz-box-orient: vertical;
 	list-style-image: url("chrome://browser/skin/Toolbar.png");
-	min-width: 0px;
 }
-.toolbarbutton-1 .toolbarbutton-icon {
-	-moz-margin-end: 0px;
+
+.toolbarbutton-1:not([type="menu-button"]) {
+	-moz-box-orient: vertical;
+}
+
+.toolbarbutton-1[type="menu"] {
+	-moz-box-orient: horizontal !important;
+}
+
+.toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-icon {
+	-moz-margin-end: 0;
 }
 toolbar[mode="full"] .toolbarbutton-1 .toolbarbutton-icon {
 	-moz-margin-end: 2px;
