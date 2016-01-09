@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
 	<em:id>{4d457603-1613-4177-b98e-98e62085837f}</em:id>
-	<em:version>1.2.0</em:version>
+	<em:version>1.2.1</em:version>
     <em:name>reinheit</em:name>
     <em:description>das Monochrom wiederbelebung. (Fork of "rein" by Naoto Kusumi)</em:description>
     <em:creator>Lootyhoof</em:creator>
