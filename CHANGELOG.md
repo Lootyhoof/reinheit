@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.2.2
+- correctly style notifications
+- style alert box
+- remove double padlocks
+
 ### 1.2.1
 - (PM26) add download location styling
 
