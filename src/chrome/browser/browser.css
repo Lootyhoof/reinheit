@@ -1494,11 +1494,6 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 #identity-box[open=true] > #page-proxy-favicon {
 	opacity: 0.4;
 }
-.verifiedDomain #page-proxy-favicon[pageproxystate="valid"],
-.verifiedIdentity #page-proxy-favicon[pageproxystate="valid"] {
-	list-style-image: url("chrome://browser/skin/Secure.png");
-	-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
-}
 #page-proxy-favicon[pageproxystate="invalid"] {
 	opacity: 0.4;
 }
