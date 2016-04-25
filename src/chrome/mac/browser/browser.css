@@ -1599,7 +1599,9 @@ popupnotification {
 	list-style-image: url("chrome://mozapps/skin/passwordmgr/key-32.png");
 }
 .popup-notification-icon[popupid="indexedDB-permissions-prompt"],
-.popup-notification-icon[popupid="indexedDB-quota-prompt"] {
+.popup-notification-icon[popupid="indexedDB-quota-prompt"],
+.popup-notification-icon[popupid*="offline-app-requested"],
+.popup-notification-icon[popupid="offline-app-usage"] {
 	list-style-image: url("chrome://global/skin/icons/Question.png");
 }
 .popup-notification-icon[popupid="xpinstall-disabled"],
@@ -1616,6 +1618,15 @@ popupnotification {
 .popup-notification-icon[popupid="click-to-play-plugins"],
 .popup-notification-icon[popupid="webapps-install"] {
 	list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.png");
+}
+.popup-notification-icon[popupid="web-notifications"] {
+  list-style-image: url(chrome://browser/skin/notification-64.png);
+}
+.popup-notification-icon[popupid="mixed-content-blocked"] {
+  list-style-image: url(chrome://browser/skin/mixed-content-blocked-64.png);
+}
+.popup-notification-icon[popupid="pointerLock"] {
+  list-style-image: url(chrome://browser/skin/pointerLock-64.png);
 }
 .addon-progress-description {
 	width: 350px;
@@ -1668,15 +1679,22 @@ popupnotification {
 	outline: 1px dotted -moz-DialogText;
 	outline-offset: -3px;
 }
+.default-notification-icon,
 #default-notification-icon {
 	list-style-image: url("chrome://global/skin/icons/information-16.png");
 }
+.identity-notification-icon,
+#identity-notification-icon {
+  list-style-image: url(chrome://mozapps/skin/profile/profileicon.png);
+}
+.geo-notification-icon,
 #geo-notification-icon {
 	list-style-image: url("chrome://browser/skin/Privacy-16.png");
 }
 #addons-notification-icon {
 	list-style-image: url("chrome://mozapps/skin/update/update.png");
 }
+.indexedDB-notification-icon,
 #indexedDB-notification-icon {
 	list-style-image: url("chrome://global/skin/icons/information-16.png");
 }
@@ -1686,8 +1704,51 @@ popupnotification {
 #webapps-notification-icon {
 	list-style-image: url("chrome://global/skin/icons/bookmarklet.png");
 }
-#plugins-notification-icon {
+#plugins-notification-icon,
+#alert-plugins-notification-icon,
+#blocked-plugins-notification-icon {
 	list-style-image: url("chrome://mozapps/skin/plugins/pluginGeneric-16.png");
+}
+
+#notification-popup-box[hidden] {
+  /* Override display:none to make the pluginBlockedNotification animation work
+     when showing the notification repeatedly. */
+  display: -moz-box;
+  visibility: collapse;
+}
+
+#blocked-plugins-notification-icon[showing] {
+  animation: pluginBlockedNotification 500ms ease 0s 5 alternate both;
+}
+
+@keyframes pluginBlockedNotification {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mixed-content-blocked-notification-icon,
+#mixed-content-blocked-notification-icon {
+  list-style-image: url(chrome://browser/skin/mixed-content-blocked-16.png);
+}
+
+.web-notifications-notification-icon,
+#web-notifications-notification-icon {
+  list-style-image: url(chrome://browser/skin/notification-16.png);
+}
+
+#pointerLock-notification-icon {
+  list-style-image: url(chrome://browser/skin/pointerLock-16.png);
+}
+#pointerLock-cancel {
+  margin: 0px;
+}
+
+#identity-popup-container {
+  min-width: 280px;
 }
 
 /* Bookmarks roots menu-items */
