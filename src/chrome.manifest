@@ -5,6 +5,3 @@ skin	mozapps	reinheit	chrome/mozapps/
 skin	browser	reinheit	chrome/mac/browser/	os=Darwin
 skin	global	reinheit	chrome/mac/global/	os=Darwin
 skin	mozapps	reinheit	chrome/mac/mozapps/	os=Darwin
-
-skin 	appver	reinheit	chrome/appver/25/ appversion<=26.0.0b2
-skin 	appver	reinheit 	chrome/appver/26/ appversion>26.0.0b2

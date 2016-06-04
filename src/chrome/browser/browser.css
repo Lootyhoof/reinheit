@@ -46,7 +46,6 @@
 @import url("chrome://browser/skin/devtools/inspect.css");
 @import url("chrome://browser/skin/social/social.css");
 @import url("chrome://browser/skin/padlock/padlock.css");
-@import url("chrome://appver/skin/browser.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
