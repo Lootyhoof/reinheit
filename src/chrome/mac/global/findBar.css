@@ -3,16 +3,8 @@
 .findbar-closebutton {
 	-moz-appearance: none;
 	background: none !important;
-	list-style-image: url("chrome://global/skin/icons/close.png");
-	-moz-image-region: rect(0px, 16px, 16px, 0px);
 	padding: 2px !important;
 	border: 1px solid transparent;
-}
-.findbar-closebutton:hover {
-	-moz-image-region: rect(0px, 32px, 16px, 16px);
-}
-.findbar-closebutton:hover:active {
-	-moz-image-region: rect(0px, 48px, 16px, 32px);
 }
 
 findbar {
@@ -97,7 +89,7 @@ findbar {
 	background-color: -moz-Field;
 	margin: 0px;
 	padding: 1px 4px;
-	border: 1px solid #CCCCCC;
+	border: 1px solid ThreeDShadow;
 	border-radius: 4px;
 }
 .findbar-textbox[status="notfound"] {
