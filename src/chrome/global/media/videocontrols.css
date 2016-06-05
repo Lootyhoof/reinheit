@@ -216,3 +216,54 @@ html|table {
 	border-collapse: collapse;
 	position: absolute;
 }
+
+/* CSS Transitions */
+.clickToPlay {
+  transition-property: opacity, background-size;
+  transition-duration: 400ms, 400ms;
+}
+.clickToPlay[fadeout] {
+  background-size: auto, 192px 192px;
+  opacity: 0;
+}
+.clickToPlay[fadeout][immediate] {
+  transition-property: opacity, background-size;
+  transition-duration: 0s, 0s;
+}
+.controlBar:not([immediate]) {
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.controlBar[fadeout] {
+  opacity: 0;
+}
+.volumeStack:not([immediate]) {
+  transition-property: opacity, margin-top;
+  transition-duration: 200ms, 200ms;
+}
+.volumeStack[fadeout] {
+  opacity: 0;
+  margin-top: 0;
+}
+.statusOverlay:not([immediate]) {
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-delay: 750ms;
+}
+.statusOverlay[fadeout] {
+  opacity: 0;
+}
+
+/* Error description formatting */
+.errorLabel {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #bbb;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 0 10px;
+  text-align: center;
+}
