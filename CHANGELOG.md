@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.3.0
+- titlebar colorisation for Windows 10
+- use dark window frame detection on Windows 8/10
+- refactor media controls for Pale Moon 26.3
+- use unified close button icons
+- various cleanups/improvements
+
 ### 1.2.2
 - correctly style notifications
 - style alert box
