@@ -102,8 +102,13 @@
       margin-top: -4px;
     }
 
-	#main-window[sizemode="maximized"] #titlebar-close {
-      padding-right: 19px;
+    #main-window[sizemode="normal"] #titlebar-close {
+      padding-right: 15px;
+      padding-bottom: 8px;
+    }
+    
+    #main-window[sizemode="maximized"] #titlebar-close {
+      padding-right: 17px;
     }
 	
     #titlebar-close:not(:-moz-lwtheme) {
