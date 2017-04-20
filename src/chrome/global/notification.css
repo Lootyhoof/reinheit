@@ -16,6 +16,10 @@ notification[type="critical"] {
 	padding: 1px;
 	border: none !important;
 }
+.messageText > .text-link {
+  color: inherit !important;
+  text-decoration: underline;
+}
 .messageImage {
 	width: 16px;
 	height: 16px;
@@ -35,4 +39,10 @@ notification[type="critical"] {
 	-moz-appearance: none;
 	padding: 4px 2px;
 	border: none !important;
+}
+.popup-notification-learnmore-link {
+  margin-top: 1em !important;
+}
+.popup-notification-learnmore-link:not([href]) {
+  display: none;
 }
