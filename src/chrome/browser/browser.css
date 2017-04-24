@@ -1813,13 +1813,13 @@ popupnotification {
 	list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.png");
 }
 .popup-notification-icon[popupid="web-notifications"] {
-  list-style-image: url(chrome://browser/skin/notification-64.png);
+  list-style-image: url(chrome://global/skin/alerts/notification-32.png);
 }
 .popup-notification-icon[popupid="mixed-content-blocked"] {
-  list-style-image: url(chrome://browser/skin/mixed-content-blocked-64.png);
+  list-style-image: url(chrome://browser/skin/mixed-content-blocked-32.png);
 }
 .popup-notification-icon[popupid="pointerLock"] {
-  list-style-image: url(chrome://browser/skin/pointerLock-64.png);
+  list-style-image: url(chrome://browser/skin/pointerLock-32.png);
 }
 .addon-progress-description {
 	width: 350px;
