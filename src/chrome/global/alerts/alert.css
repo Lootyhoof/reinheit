@@ -12,15 +12,16 @@
 
 .alertBox {
   border: 1px solid threedshadow;
-  border-radius: 3px;
   background-color: -moz-Dialog;
 }
 
 .alertImageBox {
   padding: 8px 0;
   width: 64px;
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6));
-  -moz-border-end: 1px solid rgba(0,0,0,.1);
+  background-color: ThreeDShadow;
+  background-image: url("chrome://global/skin/reintoolbar/shadow-top.png");
+  background-position: 0% 0%;
+  background-repeat: repeat-x;
 }
 
 .alertTextBox {
@@ -42,7 +43,7 @@
 #alertImage {
   max-width: 48px;
   max-height: 48px;
-  list-style-image: url(chrome://global/skin/alerts/notification-48.png);
+  list-style-image: url(chrome://global/skin/alerts/notification-32.png);
 }
 
 #alertNotification[clickable="true"] {
