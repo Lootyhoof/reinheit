@@ -50,10 +50,10 @@ button {
 	min-width: 6.3em;
 	margin: 2px 4px;
 	border: 3px solid;
-	-moz-border-top-colors: ThreeDShadow ThreeDFace;
-	-moz-border-right-colors: ThreeDShadow ThreeDFace;
-	-moz-border-bottom-colors: ThreeDShadow ThreeDFace;
-	-moz-border-left-colors: ThreeDShadow ThreeDFace;
+	-moz-border-top-colors: var(--border-color) ThreeDFace;
+	-moz-border-right-colors: var(--border-color) ThreeDFace;
+	-moz-border-bottom-colors: var(--border-color) ThreeDFace;
+	-moz-border-left-colors: var(--border-color) ThreeDFace;
 	border-radius: 2px;
 }
 .button-box {
@@ -69,29 +69,29 @@ button {
 
 button:hover,
 button:focus {
-	-moz-border-top-colors: ThreeDShadow Highlight ThreeDFace;
-	-moz-border-right-colors: ThreeDShadow Highlight ThreeDFace;
-	-moz-border-bottom-colors: ThreeDShadow Highlight ThreeDFace;
-	-moz-border-left-colors: ThreeDShadow Highlight ThreeDFace;
+	-moz-border-top-colors: var(--border-color) Highlight ThreeDFace;
+	-moz-border-right-colors: var(--border-color) Highlight ThreeDFace;
+	-moz-border-bottom-colors: var(--border-color) Highlight ThreeDFace;
+	-moz-border-left-colors: var(--border-color) Highlight ThreeDFace;
 }
 button[default="true"]:hover,
 button[default="true"]:focus {
-	-moz-border-top-colors: ThreeDShadow Highlight ThreeDShadow;
-	-moz-border-right-colors: ThreeDShadow Highlight ThreeDShadow;
-	-moz-border-bottom-colors: ThreeDShadow Highlight ThreeDShadow;
-	-moz-border-left-colors: ThreeDShadow Highlight ThreeDShadow;
+	-moz-border-top-colors: var(--border-color) Highlight var(--border-color);
+	-moz-border-right-colors: var(--border-color) Highlight var(--border-color);
+	-moz-border-bottom-colors: var(--border-color) Highlight var(--border-color);
+	-moz-border-left-colors: var(--border-color) Highlight var(--border-color);
 }
 button:focus > .button-box {
-	border: 1px dotted ThreeDDarkShadow;
+	border: 1px dotted var(--border-dark-color);
 }
 
 /* default state */
 
 button[default="true"] {
-	-moz-border-top-colors: ThreeDShadow ThreeDFace ThreeDShadow;
-	-moz-border-right-colors: ThreeDShadow ThreeDFace ThreeDShadow;
-	-moz-border-bottom-colors: ThreeDShadow ThreeDFace ThreeDShadow;
-	-moz-border-left-colors: ThreeDShadow ThreeDFace ThreeDShadow;
+	-moz-border-top-colors: var(--border-color) ThreeDFace var(--border-color);
+	-moz-border-right-colors: var(--border-color) ThreeDFace var(--border-color);
+	-moz-border-bottom-colors: var(--border-color) ThreeDFace var(--border-color);
+	-moz-border-left-colors: var(--border-color) ThreeDFace var(--border-color);
 }
 
 /* active/open/checked state */
@@ -116,10 +116,10 @@ button[checked="true"] > .button-box {
 
 button[disabled="true"] {
 	color: GrayText;
-	-moz-border-top-colors: ThreeDShadow ThreeDFace !important;
-	-moz-border-right-colors: ThreeDShadow ThreeDFace !important;
-	-moz-border-bottom-colors: ThreeDShadow ThreeDFace !important;
-	-moz-border-left-colors: ThreeDShadow ThreeDFace !important;
+	-moz-border-top-colors: var(--border-color) ThreeDFace !important;
+	-moz-border-right-colors: var(--border-color) ThreeDFace !important;
+	-moz-border-bottom-colors: var(--border-color) ThreeDFace !important;
+	-moz-border-left-colors: var(--border-color) ThreeDFace !important;
 }
 button[disabled="true"] > .button-box {
 	padding: 0px 3px 1px 3px !important;

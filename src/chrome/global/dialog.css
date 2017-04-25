@@ -59,7 +59,7 @@ dialog {
 dialogheader {
 	margin: 0px 0px 5px 0px;
 	color: HighlightText;
-	background-color: ThreeDShadow;
+	background-color: var(--border-color);
 	background-image: url("chrome://browser/skin/stripe.png");
 	padding: 5px 8px;
 }
@@ -83,7 +83,7 @@ dialogheader {
 	border-left: none;
 	border-right: none;
 	border-top: none;
-	-moz-border-bottom-colors: ThreeDHighlight ThreeDShadow;
+	-moz-border-bottom-colors: ThreeDHighlight var(--border-color);
 }
 .header-large > .dialogheader-title {
 	font: inherit;

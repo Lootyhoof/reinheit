@@ -2,6 +2,5 @@ skin	browser	reinheit	chrome/browser/
 skin	global	reinheit	chrome/global/
 skin	mozapps	reinheit	chrome/mozapps/
 
-skin	browser	reinheit	chrome/mac/browser/	os=Darwin
-skin	global	reinheit	chrome/mac/global/	os=Darwin
-skin	mozapps	reinheit	chrome/mac/mozapps/	os=Darwin
+skin	os reinheit	chrome/os/darwin/ os=Darwin
+skin	os reinheit	chrome/os/general/ os!=Darwin

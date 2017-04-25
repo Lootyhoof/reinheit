@@ -83,7 +83,7 @@
 	cursor: text;
 	color: -moz-FieldText;
 	background-color: -moz-Field;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 }
 #editBMPanel_namePicker[droppable="false"] > .menulist-editable-box {
   /* Normal editable menulists set this to "menulist-textfield". */

@@ -82,10 +82,10 @@ treechildren::-moz-tree-image(ScrapBookTreecolTitle, leaf, note) {
 	background-color: -moz-Field;
 	margin: 2px 4px;
 	border: 2px solid !important;
-	-moz-border-top-colors: -moz-Dialog ThreeDShadow;
-	-moz-border-right-colors: -moz-Dialog ThreeDShadow;
-	-moz-border-bottom-colors: -moz-Dialog ThreeDShadow;
-	-moz-border-left-colors: -moz-Dialog ThreeDShadow;
+	-moz-border-top-colors: -moz-Dialog var(--border-color);
+	-moz-border-right-colors: -moz-Dialog var(--border-color);
+	-moz-border-bottom-colors: -moz-Dialog var(--border-color);
+	-moz-border-left-colors: -moz-Dialog var(--border-color);
 }
 
 /* Properties */

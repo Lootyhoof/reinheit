@@ -50,7 +50,7 @@ panel {
 	background-color: -moz-Dialog;
 	min-width: 1px;
 	padding: 2px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	color: MenuText;
 }
 menupopup {
@@ -110,5 +110,5 @@ menulist > menupopup,
 	background-image: none;
 	min-width: 0px;
 	padding: 0px;
-	border: 1px Solid ThreeDShadow;
+	border: 1px Solid var(--border-color);
 }

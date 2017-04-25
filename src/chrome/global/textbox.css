@@ -51,7 +51,7 @@ textbox {
 	background-color: -moz-Field;
 	margin: 2px 3px;
 	padding: 1px 3px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 4px;
 }
 textbox[empty="true"] {

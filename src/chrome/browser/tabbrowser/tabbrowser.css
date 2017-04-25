@@ -2,7 +2,7 @@
 /* ::::: tabbrowser tabs ::::: */
 
 #TabsToolbar:not(:-moz-lwtheme) {
-	background-color: ThreeDShadow;
+	background-color: var(--border-color);
 	background-image: url("chrome://global/skin/reintoolbar/shadow-top.png");
 	background-position: 0% 0%;
 	background-repeat: repeat-x;

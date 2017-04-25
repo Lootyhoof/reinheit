@@ -49,7 +49,7 @@ scrollbar {
 	-moz-appearance: none;
 	-moz-binding: url("chrome://global/content/bindings/scrollbar.xml#scrollbar");
 	cursor: default;
-	background-color: ThreeDShadow;
+	background-color: var(--border-color);
 	background-image: url("chrome://global/skin/reintoolbar/back-light-w.png");
 }
 scrollbar[orient="vertical"] {
@@ -72,7 +72,7 @@ scrollbarbutton {
 
 thumb {
 	background-image: url("chrome://global/skin/scrollbar/grip.png");
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 }
 thumb[orient="vertical"] {
 	min-height: 16px;
@@ -154,8 +154,8 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
 	html|div scrollbarbutton {
 		border: 2px solid;
 		-moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-		-moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-		-moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
+		-moz-border-right-colors: var(--border-dark-color) var(--border-color);
+		-moz-border-bottom-colors: var(--border-dark-color) var(--border-color);
 		-moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
 		background-color: -moz-Dialog;
 	}
@@ -179,10 +179,10 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
 		min-height: 16px;
 	}
 	html|div scrollbarbutton:hover:active, html|div scrollbarbutton[active="true"] {
-		-moz-border-top-colors: ThreeDShadow -moz-Dialog;
-		-moz-border-right-colors: ThreeDShadow -moz-Dialog;
-		-moz-border-bottom-colors: ThreeDShadow -moz-Dialog;
-		-moz-border-left-colors: ThreeDShadow -moz-Dialog;
+		-moz-border-top-colors: var(--border-color) -moz-Dialog;
+		-moz-border-right-colors: var(--border-color) -moz-Dialog;
+		-moz-border-bottom-colors: var(--border-color) -moz-Dialog;
+		-moz-border-left-colors: var(--border-color) -moz-Dialog;
 		background-position: 60% 60%;
 	}
 

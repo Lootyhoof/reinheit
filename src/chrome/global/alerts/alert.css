@@ -18,7 +18,7 @@
 .alertImageBox {
   padding: 8px 0;
   width: 64px;
-  background-color: ThreeDShadow;
+  background-color: var(--border-color);
   background-image: url("chrome://global/skin/reintoolbar/shadow-top.png");
   background-position: 0% 0%;
   background-repeat: repeat-x;

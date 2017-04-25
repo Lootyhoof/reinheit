@@ -105,7 +105,7 @@ toolbar[iconsize="small"] #menu-button.toolbarbutton-1 {
 #downbarToFullButton:hover,
 #downbarClearButtonMini:hover {
 	background: transparent !important;
-	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight !important;
+	border-color: ThreeDHighlight var(--border-color) var(--border-color) ThreeDHighlight !important;
 }
 #downbarMini:hover:active,
 #downbarMainMenuButton:hover:active,
@@ -118,7 +118,7 @@ toolbar[iconsize="small"] #menu-button.toolbarbutton-1 {
 	padding-bottom: 1px !important;
 	-moz-padding-start: 3px !important;
 	-moz-padding-end: 1px !important;
-	border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow !important;
+	border-color: var(--border-color) ThreeDHighlight ThreeDHighlight var(--border-color) !important;
 }
 #nav-bar #downbarMini {
 	margin: 2px 1px !important;
@@ -337,7 +337,7 @@ toolbar[iconsize="small"] #quicknote-button:hover,
 	border: none !important;
 }
 #quicknote-main #tabbox > hbox {
-	background-color: ThreeDShadow;
+	background-color: var(--border-color);
 	background-image: url("chrome://global/skin/reintoolbar/shadow-top.png");
 	background-position: 0% 0%;
 	background-repeat: repeat-x;

@@ -50,10 +50,10 @@ listbox {
 	background-color: -moz-Field;
 	margin: 2px 4px;
 	border: 2px solid !important;
-	-moz-border-top-colors: -moz-Dialog ThreeDShadow !important;
-	-moz-border-right-colors: -moz-Dialog ThreeDShadow !important;
-	-moz-border-bottom-colors: -moz-Dialog ThreeDShadow !important;
-	-moz-border-left-colors: -moz-Dialog ThreeDShadow !important;
+	-moz-border-top-colors: -moz-Dialog var(--border-color) !important;
+	-moz-border-right-colors: -moz-Dialog var(--border-color) !important;
+	-moz-border-bottom-colors: -moz-Dialog var(--border-color) !important;
+	-moz-border-left-colors: -moz-Dialog var(--border-color) !important;
 }
 listbox[disabled="true"] {
 	color: GrayText;
@@ -88,8 +88,8 @@ listheader {
 	-moz-margin-start: 0px;
 	-moz-margin-end: 1px;
 	padding: 1px 4px;
-	border: 1px solid ThreeDShadow;
-	-moz-border-start: 5px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
+	-moz-border-start: 5px solid var(--border-color);
 }
 listheader:first-child {
 	margin: 1px;

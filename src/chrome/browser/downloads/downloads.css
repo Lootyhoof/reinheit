@@ -48,7 +48,7 @@ richlistitem[type="download"] {
 	height: 48px;
 	padding: 0px 8px 0px 8px;
 	margin: 0px;
-	border-top: 1px dotted ThreeDShadow;
+	border-top: 1px dotted var(--border-color);
 }
 richlistitem[type="download"]:first-child {
 	border-top: 1px solid transparent;
@@ -199,7 +199,7 @@ toolbar[iconsize="small"] #downloads-indicator-progress {
 	background-color: rgba(0,0,0,0.1);
 	min-width: 0px;
 	min-height: 0px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 2px 0px 0px 2px;
 }
 #downloads-indicator-progress > .progress-remainder {
@@ -207,7 +207,7 @@ toolbar[iconsize="small"] #downloads-indicator-progress {
 	background-color: rgba(0,0,0,0.1);
 	min-width: 0px;
 	min-height: 0px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	-moz-border-start: none;
 	border-radius: 0px 2px 2px 0px;
 }

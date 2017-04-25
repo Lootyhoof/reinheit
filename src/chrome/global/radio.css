@@ -69,7 +69,7 @@ radio {
 /* ..... focused state ..... */
 
 radio[focused="true"] > .radio-label-box {
-	border: 1px dotted ThreeDDarkShadow;
+	border: 1px dotted var(--border-dark-color);
 }
 
 /* ::::: checkmark image ::::: */

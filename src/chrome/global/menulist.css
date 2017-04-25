@@ -55,7 +55,7 @@ menulist {
 	padding-bottom: 1px !important;
 	-moz-padding-start: 1px !important;
 	-moz-padding-end: 1px !important;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 4px;
 }
 .menulist-label-box {
@@ -152,8 +152,8 @@ html|*.menulist-editable-input {
 	background-color: -moz-Dialog;
 	margin: 0px;
 	-moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-	-moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-	-moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
+	-moz-border-right-colors: var(--border-dark-color) var(--border-color);
+	-moz-border-bottom-colors: var(--border-dark-color) var(--border-color);
 	-moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
 }
 .menulist-compact > .menulist-label {
@@ -168,9 +168,9 @@ html|*.menulist-editable-input {
 }
 .menulist-compact[open="true"] {
 	color: ThreeDHighlight;
-	background-color: ThreeDShadow;
-	-moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
-	-moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-	-moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-	-moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+	background-color: var(--border-color);
+	-moz-border-top-colors: var(--border-dark-color) var(--border-color);
+	-moz-border-right-colors: var(--border-dark-color) var(--border-color);
+	-moz-border-bottom-colors: var(--border-dark-color) var(--border-color);
+	-moz-border-left-colors: var(--border-dark-color) var(--border-color);
 }

@@ -51,20 +51,20 @@ colorpicker[type="button"] {
 	height: 24px;
 	padding: 1px;
 	border: 3px solid;
-	-moz-border-top-colors: ThreeDShadow ThreeDFace;
-	-moz-border-right-colors: ThreeDShadow ThreeDFace;
-	-moz-border-bottom-colors: ThreeDShadow ThreeDFace;
-	-moz-border-left-colors: ThreeDShadow ThreeDFace;
+	-moz-border-top-colors: var(--border-color) ThreeDFace;
+	-moz-border-right-colors: var(--border-color) ThreeDFace;
+	-moz-border-bottom-colors: var(--border-color) ThreeDFace;
+	-moz-border-left-colors: var(--border-color) ThreeDFace;
 }
 .colorpicker-button-colorbox {
 	border: 1px solid #000000;
 }
 colorpicker[type="button"]:focus,
 colorpicker[type="button"][open="true"] {
-	-moz-border-top-colors: ThreeDShadow Highlight;
-	-moz-border-right-colors: ThreeDShadow Highlight;
-	-moz-border-bottom-colors: ThreeDShadow Highlight;
-	-moz-border-left-colors: ThreeDShadow Highlight;
+	-moz-border-top-colors: var(--border-color) Highlight;
+	-moz-border-right-colors: var(--border-color) Highlight;
+	-moz-border-bottom-colors: var(--border-color) Highlight;
+	-moz-border-left-colors: var(--border-color) Highlight;
 }
 
 /* ::::: colorpicker tiles ::::: */
@@ -73,8 +73,8 @@ colorpicker[type="button"][open="true"] {
 	width: 20px;
 	height: 20px;
 	margin: 1px;
-	border-left: 1px solid ThreeDShadow;
-	border-top: 1px solid ThreeDShadow;
+	border-left: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color);
 	border-right: 1px solid ThreeDHighlight;
 	border-bottom: 1px solid ThreeDHighlight;
 }

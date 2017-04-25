@@ -39,10 +39,10 @@ toolbar[toolbarname*="#bg-color2"] {
 	background-color: ThreeDLightShadow;
 }
 toolbar[toolbarname*="#bg-color3"] {
-	background-color: ThreeDShadow;
+	background-color: var(--border-color);
 }
 toolbar[toolbarname*="#bg-color4"] {
-	background-color: ThreeDDarkShadow;
+	background-color: var(--border-dark-color);
 }
 toolbar[toolbarname*="#bg-black"] {
 	background-color: #000000;

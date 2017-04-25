@@ -11,6 +11,7 @@
 @import url("chrome://global/skin/formatting.css");
 @import url("chrome://global/skin/reintoolbar/reintoolbar.css");
 @import url("chrome://global/skin/add-ons/add-ons.css");
+@import url("chrome://os/skin/global.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -130,7 +131,7 @@ statusbar resizer[dir="bottomright"] {
 }
 statusbarpanel:hover,
 statusbarpane[buttonover="true"] {
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+  border-color: ThreeDHighlight var(--border-color) var(--border-color) ThreeDHighlight;
 }
 
 /* XXXBlake yeah, shoot me -- these don't belong here.  I'll move them later. */
@@ -181,14 +182,14 @@ sidebarheader:-moz-lwtheme {
 }
 
 .inset {
-  border: 1px solid ThreeDShadow;
+  border: 1px solid var(--border-color);
   border-right-color: ThreeDHighlight;
   border-bottom-color: ThreeDHighlight;
   margin: 0 5px 5px;
 }
 
 .outset {
-  border: 1px solid ThreeDShadow;
+  border: 1px solid var(--border-color);
   border-left-color: ThreeDHighlight;
   border-top-color: ThreeDHighlight;
 }
@@ -209,14 +210,14 @@ separator.thin[orient="vertical"] {
 }
 
 separator.groove:not([orient="vertical"]) {
-  border-top: 1px solid ThreeDShadow;
+  border-top: 1px solid var(--border-color);
   border-bottom: 1px solid ThreeDHighlight;
   height: 0;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
 }
 separator.groove[orient="vertical"] {
-  border-left: 1px solid ThreeDShadow;
+  border-left: 1px solid var(--border-color);
   border-right: 1px solid ThreeDHighlight;
   width: 0;
   margin-left: 0.4em;
@@ -252,7 +253,7 @@ label[disabled="true"] {
 }
 
 label[disabled="true"]:-moz-system-metric(windows-classic) {
-  color: ThreeDShadow;
+  color: var(--border-color);
   text-shadow: 1px 1px ThreeDHighlight;
 }
 

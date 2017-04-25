@@ -24,8 +24,8 @@
   -moz-appearance: scalethumb-horizontal;
   border: 2px solid;
   -moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-right-colors: var(--border-dark-color) var(--border-color);
+  -moz-border-bottom-colors: var(--border-dark-color) var(--border-color);
   -moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
   background-color: -moz-Dialog;
   min-width: 30px;
@@ -40,7 +40,7 @@
 
 .scale-thumb[disabled="true"] {
   -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow !important;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow !important;
+  -moz-border-right-colors: var(--border-dark-color) var(--border-color) !important;
+  -moz-border-bottom-colors: var(--border-dark-color) var(--border-color) !important;
   -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow !important;
 }

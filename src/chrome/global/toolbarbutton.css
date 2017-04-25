@@ -31,7 +31,7 @@ toolbarbutton.tabbable {
 }
 toolbarbutton:hover,
 toolbarbutton[buttonover="true"] {
-	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+	border-color: ThreeDHighlight var(--border-color) var(--border-color) ThreeDHighlight;
 }
 toolbarbutton:hover:active,
 toolbarbutton[open="true"] {
@@ -39,7 +39,7 @@ toolbarbutton[open="true"] {
 	padding-bottom: 1px;
 	-moz-padding-start: 3px;
 	-moz-padding-end: 1px;
-	border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+	border-color: var(--border-color) ThreeDHighlight ThreeDHighlight var(--border-color);
 }
 toolbarbutton[disabled="true"],
 toolbarbutton[disabled="true"]:hover,
@@ -117,7 +117,7 @@ toolbarbutton[checked="true"] {
 	padding-bottom: 1px !important;
 	-moz-padding-start: 3px !important;
 	-moz-padding-end: 1px !important;
-	border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+	border-color: var(--border-color) ThreeDHighlight ThreeDHighlight var(--border-color);
 }
 #nav-bar toolbarbutton[checked="true"] {
 	background-color: rgba(255,255,255,0.7) !important;

@@ -90,7 +90,7 @@ radio[pane=paneSync] {
 	color: -moz-DialogText;
 	margin: 2px 3px;
 	padding: 1px 3px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 4px;
 }
 filefield[disabled="true"] .fileFieldContentBox {
@@ -162,7 +162,7 @@ filefield[disabled="true"] .fileFieldIcon {
 	list-style-image: url("chrome://global/skin/icons/folder-open.png") !important;
 }
 #cookieInfoBox {
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 0px;
 	margin: 4px;
 	padding: 0px;

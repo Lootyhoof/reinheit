@@ -4,7 +4,7 @@
 /* NoScript */
 
 .noscript-bottom-notify notification {
-	border-top: 1px solid ThreeDShadow !important;
+	border-top: 1px solid var(--border-color) !important;
 	border-bottom: 0px solid transparent !important;
 }
 

@@ -37,7 +37,7 @@ ul {
 	min-width: 13em;
 	max-width: 52em;
 	margin: 4em auto;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 10px;
 	padding: 3em;
 	-moz-padding-start: 30px;

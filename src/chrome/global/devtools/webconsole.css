@@ -531,7 +531,7 @@ a {
   /* For light theme use a white background for the input - it looks better
      than off-white */
   background-color: #fff;
-  border-color: ThreeDShadow;
+  border-color: var(--border-color);
 }
 .theme-light .navigation-marker .url {
   background: #fff;

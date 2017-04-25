@@ -103,7 +103,7 @@ toolbarseparator {
 	border-bottom: 2px solid transparent;
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
-	-moz-border-left-colors  : transparent transparent ThreeDShadow;
+	-moz-border-left-colors  : transparent transparent var(--border-color);
 	-moz-border-right-colors : transparent transparent ThreeDHighlight;
 }
 toolbarspacer {
@@ -136,7 +136,7 @@ toolbarpaletteitem[place="toolbar"] > toolbarspacer {
 	margin-bottom: 2px;
 	-moz-margin-start: 0px;
 	-moz-margin-end: 2px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 	border-radius: 3px;
 }
 
@@ -148,10 +148,10 @@ toolbarpaletteitem[place="toolbar"] > toolbarspacer {
 .toolbarpaletteitem-box[type="spacer"][place="palette"],
 .toolbarpaletteitem-box[type="spring"][place="palette"] {
 	border: 5px solid;
-	-moz-border-top-colors: transparent transparent transparent transparent ThreeDShadow;
-	-moz-border-right-colors: transparent transparent transparent transparent ThreeDShadow;
-	-moz-border-bottom-colors: transparent transparent transparent transparent ThreeDShadow;
-	-moz-border-left-colors: transparent transparent transparent transparent ThreeDShadow;
+	-moz-border-top-colors: transparent transparent transparent transparent var(--border-color);
+	-moz-border-right-colors: transparent transparent transparent transparent var(--border-color);
+	-moz-border-bottom-colors: transparent transparent transparent transparent var(--border-color);
+	-moz-border-left-colors: transparent transparent transparent transparent var(--border-color);
 	border-radius: 7px;
 }
 #personal-bookmarks .bookmarks-toolbar-customize {

@@ -147,14 +147,14 @@ menubar > menu {
 menubar > menu[_moz-menuactive="true"] {
 	color: -moz-DialogText;
 	background-color: transparent;
-	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+	border-color: ThreeDHighlight var(--border-color) var(--border-color) ThreeDHighlight;
 }
 menubar > menu[_moz-menuactive="true"][open="true"] {
 	padding-top: 3px;
 	padding-bottom: 1px;
 	-moz-padding-start: 6px;
 	-moz-padding-end: 4px;
-	border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+	border-color: var(--border-color) ThreeDHighlight ThreeDHighlight var(--border-color);
 }
 
 menubar > menu:-moz-lwtheme {
@@ -173,7 +173,7 @@ menubar > menu:-moz-lwtheme[_moz-menuactive="true"]:not([disabled="true"]) {
 }
 
 menubar > menu:-moz-window-inactive {
-  color: ThreeDShadow;
+  color: var(--border-color);
 }
 
 /* ..... internal content .... */
@@ -282,7 +282,7 @@ menuseparator {
 	margin-bottom: 2px;
 	-moz-margin-start: 32px;
 	-moz-margin-end: 2px;
-	border-top: 1px dotted ThreeDShadow;
+	border-top: 1px dotted var(--border-color);
 	border-bottom: none;
 }
 menulist > menupopup > menuseparator,

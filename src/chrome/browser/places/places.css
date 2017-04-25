@@ -103,7 +103,7 @@ treechildren::-moz-tree-image(title, query, folder, open) {
 	list-style-image: url("chrome://global/skin/icons/folder-open.png");
 }
 treechildren::-moz-tree-row(session-start) {
-	border-top:1px dotted ThreeDShadow;
+	border-top:1px dotted var(--border-color);
 	font-weight: bold;
 }
 treechildren::-moz-tree-cell-text(date, session-continue) {

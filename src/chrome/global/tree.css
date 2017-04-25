@@ -50,10 +50,10 @@ tree {
 	background-color: -moz-Field;
 	margin: 2px 4px;
 	border: 2px solid !important;
-	-moz-border-top-colors: -moz-Dialog ThreeDShadow !important;
-	-moz-border-right-colors: -moz-Dialog ThreeDShadow !important;
-	-moz-border-bottom-colors: -moz-Dialog ThreeDShadow !important;
-	-moz-border-left-colors: -moz-Dialog ThreeDShadow !important;
+	-moz-border-top-colors: -moz-Dialog var(--border-color) !important;
+	-moz-border-right-colors: -moz-Dialog var(--border-color) !important;
+	-moz-border-bottom-colors: -moz-Dialog var(--border-color) !important;
+	-moz-border-left-colors: -moz-Dialog var(--border-color) !important;
 }
 
 /* ::::: tree focusring ::::: */
@@ -155,7 +155,7 @@ tree[seltype="cell"] > treechildren::-moz-tree-line,
 tree[seltype="text"] > treechildren::-moz-tree-line,
 treechildren::-moz-tree-line {
 	visibility: visible !important;
-	border: 1px dotted ThreeDShadow;
+	border: 1px dotted var(--border-color);
 }
 tree[seltype="cell"] > treechildren::-moz-tree-line(active, selected, focus),
 treechildren::-moz-tree-line(selected, focus) {
@@ -167,7 +167,7 @@ treechildren::-moz-tree-line(selected, focus) {
 /* ::::: tree separator ::::: */
 
 treechildren::-moz-tree-separator {
-	border-top: 1px solid ThreeDShadow;
+	border-top: 1px solid var(--border-color);
 	border-bottom: 1px solid ThreeDHighlight;
 }
 
@@ -191,12 +191,12 @@ treechildren::-moz-tree-drop-feedback {
 treechildren::-moz-tree-progressmeter {
 	margin: 2px 4px;
 	border: 2px solid;
-	-moz-border-top-colors: ThreeDShadow -moz-Dialog;
+	-moz-border-top-colors: var(--border-color) -moz-Dialog;
 	-moz-border-right-colors: ThreeDHighlight -moz-Dialog;
 	-moz-border-bottom-colors: ThreeDHighlight -moz-Dialog;
-	-moz-border-left-colors: ThreeDShadow -moz-Dialog;
+	-moz-border-left-colors: var(--border-color) -moz-Dialog;
 	background-color: -moz-Dialog;
-	color: ThreeDShadow;
+	color: var(--border-color);
 }
 treechildren::-moz-tree-progressmeter(progressUndetermined) {
 	list-style-image: url("chrome://global/skin/progressmeter/progressmeter-busy.gif");
@@ -219,16 +219,16 @@ treecolpicker {
 	-moz-margin-start: 0px;
 	-moz-margin-end: 1px;
 	padding: 1px 4px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 }
 treecol {
-	-moz-border-start: 5px solid ThreeDShadow;
+	-moz-border-start: 5px solid var(--border-color);
 }
 treecol:first-child {
 	margin: 1px;
 }
 treecolpicker {
-	-moz-border-start: 1px solid ThreeDShadow;
+	-moz-border-start: 1px solid var(--border-color);
 }
 .treecol-image {
 	padding: 1px;
@@ -262,17 +262,17 @@ treecolpicker:hover:active {
 /* ::::: column drag and drop styles ::::: */
 
 treecol[dragging="true"] {
-	border: 1px solid ThreeDDarkShadow;
-	background-color: ThreeDShadow !important;
+	border: 1px solid var(--border-dark-color);
+	background-color: var(--border-color) !important;
 	color: ThreeDHighlight !important;
 }
 treecol[insertafter="true"] {}
 treecol[insertbefore="true"] {}
 treechildren::-moz-tree-column(insertbefore) {
-	border-left: 1px solid ThreeDShadow;
+	border-left: 1px solid var(--border-color);
 }
 treechildren::-moz-tree-column(insertafter) {
-	border-right: 1px solid ThreeDShadow;
+	border-right: 1px solid var(--border-color);
 }
 
 /* ::::: sort direction indicator :::::	*/
@@ -338,7 +338,7 @@ treechildren::-moz-tree-image(Name, separator) {
 	margin: 0px 0px;
 }
 treechildren::-moz-tree-cell-text(Name, separator) {
-	color: ThreeDShadow;
+	color: var(--border-color);
 	margin: 0px 5px 0px 5px;
 }
 treechildren::-moz-tree-cell-text(Name, separator, selected, focus) {

@@ -43,7 +43,7 @@ richlistbox {
 	color: -moz-FieldText;
 	background-color: -moz-Field;
 	margin: 2px 4px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 }
 richlistbox[disabled="true"] {
 	color: GrayText;

@@ -54,7 +54,7 @@ dialog {
 	min-height: 32px !important;
 	margin: 0px;
 	padding: 6px;
-	border-bottom: 1px solid ThreeDShadow;
+	border-bottom: 1px solid var(--border-color);
 }
 #main-box > #palette-box {
 	margin: 0px !important;

@@ -26,5 +26,5 @@
 	color: -moz-dialogtext;
 	background-color: window;
 	margin: 1em 0px 1em 0px;
-	border: 1px solid ThreeDShadow;
+	border: 1px solid var(--border-color);
 }

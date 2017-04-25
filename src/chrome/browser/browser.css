@@ -4,9 +4,9 @@
 
 @import url("chrome://global/skin/");
 @import url("chrome://browser/skin/tabbrowser/tabbrowser.css");
-@import url("chrome://browser/skin/devtools/inspect.css");
 @import url("chrome://browser/skin/social/social.css");
 @import url("chrome://browser/skin/padlock/padlock.css");
+@import url("chrome://os/skin/browser.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
@@ -23,21 +23,6 @@
 	background-image: url("chrome://global/skin/reintoolbar/border.png");
 	background-position: 0% 0%;
 	background-repeat: repeat-x;
-}
-
-/* Use OS native menubar theming */
-
-#main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
-    color: CaptionText;
-}
-#main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme):-moz-window-inactive {
-    color: InactiveCaptionText;
-}
-  
-/* Make the tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
-#main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
-#main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
-    background-color: transparent;
 }
 
 /* ::::: aero style ::::: */
@@ -1541,7 +1526,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 	margin-top: 0px;
 	margin-bottom: 0px;
 	-moz-margin-end: -4px;
-	-moz-border-start: 1px dotted ThreeDShadow !important;
+	-moz-border-start: 1px dotted var(--border-color) !important;
 	border-radius: 0px !important;
 }
 #urlbar-go-button {
@@ -1636,7 +1621,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 	-moz-appearance: none;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	-moz-border-end: 1px dotted ThreeDShadow;
+	-moz-border-end: 1px dotted var(--border-color);
 }
 #identity-box.verifiedIdentity {
 	background-color: #b5f8bf;
@@ -2076,7 +2061,7 @@ popupnotification {
 }
 .allTabs-preview-inner > .tabPreview-canvas {
 	background-color: rgb(60%,60%,60%);
-	box-shadow: 0px 0px 1.5px ThreeDShadow;
+	box-shadow: 0px 0px 1.5px var(--border-color);
 }
 .allTabs-preview:not(:hover):not([closebuttonhover]) > html|canvas {
 	opacity: 0.8;
@@ -2707,7 +2692,7 @@ html|*#gcli-output-frame {
 }
 
 .click-to-play-plugins-notification-center-box {
-  border: 1px solid ThreeDShadow;
+  border: 1px solid var(--border-color);
   margin: 10px;
 }
 
