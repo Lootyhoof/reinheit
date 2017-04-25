@@ -7,6 +7,7 @@
 @import url("chrome://global/skin/add-ons/Stylish.css");
 @import url("chrome://global/skin/add-ons/TMP.css");
 @import url("chrome://global/skin/add-ons/WDE.css");
+@import url("chrome://os/skin/global.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 

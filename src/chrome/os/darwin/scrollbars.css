@@ -1,0 +1,34 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ::::: scrollbar ::::: */
+
+scrollbar {
+  background-color: #CCCCCC;
+}
+
+/* ::::: thumb (horizontal) ::::: */
+
+thumb {
+  border: 1px solid #CCCCCC;
+}
+
+@media print {
+  /* ::::: borders for thumb and buttons ::::: */
+
+  html|div thumb,
+  html|div scrollbarbutton {
+    -moz-border-right-colors: #AAAAAA #CCCCCC;
+    -moz-border-bottom-colors: #AAAAAA #CCCCCC;
+  }
+  
+  /* ::::: scrollbar button ::::: */
+  
+  html|div scrollbarbutton:hover:active, html|div scrollbarbutton[active="true"] {
+    -moz-border-top-colors: #CCCCCC -moz-Dialog;
+    -moz-border-right-colors: #CCCCCC -moz-Dialog;
+    -moz-border-bottom-colors: #CCCCCC -moz-Dialog;
+    -moz-border-left-colors: #CCCCCC -moz-Dialog;
+  }
+}
