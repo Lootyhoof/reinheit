@@ -6,10 +6,10 @@
 .end-arrow, .home-arrow[chromedir="rtl"] {
 	list-style-image: url("chrome://global/skin/arrow/arrow-rit-sharp-end.gif");
 }
-.left-arrow, .right-arrow[chromedir="rtl"] {
+.previous-arrow, .next-arrow[chromedir="rtl"] {
 	list-style-image: url("chrome://global/skin/arrow/arrow-lft-sharp.gif");
 }
-.right-arrow, .left-arrow[chromedir="rtl"] {
+.next-arrow, .previous-arrow[chromedir="rtl"] {
 	list-style-image: url("chrome://global/skin/arrow/arrow-rit-sharp.gif");
 }
 
