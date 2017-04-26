@@ -1,5 +1,19 @@
 # Changelog
 
+### 2.0.0
+- add new icons for desktop notifications
+- add new icons for mixed content blocking
+- add new icons for mouse pointer locking
+- add new private browsing indicator icon
+- redesign desktop notifications
+- fix about page styling
+- unify platform stylings
+- sync plugins UI with default
+- fix learn more links in popup notifications
+- fix print preview arrows
+- add imagedocument.png for when viewing standalone images
+- major cleanup (filesize reduced by ~50%!)
+
 ### 1.5.1
 - sync devtools styling with default
 - allow extensions to style their own toolbarbutton-badge
