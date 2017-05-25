@@ -7,6 +7,12 @@
 	padding: 10px;
 }
 
+/* header */
+
+#permissions-pagetitle {
+  display: none;
+}
+
 /* sites box */
 
 #sites-box {
@@ -79,6 +85,18 @@
 }
 .pref-icon[type="image"] {
 	list-style-image: url("chrome://mozapps/skin/extensions/themeGeneric.png");
+}
+.pref-icon[type="desktop-notification"] {
+  list-style-image: url(chrome://global/skin/alerts/notification-32.png);
+}
+.pref-icon[type="plugins"] {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.png");
+}
+.pref-icon[type="fullscreen"] {
+  list-style-image: url("chrome://browser/skin/preferences/information.png");
+}
+.pref-icon[type="pointerLock"] {
+  list-style-image: url(chrome://browser/skin/pointerLock-32.png);
 }
 .pref-title {
 	font-size: 125%;
