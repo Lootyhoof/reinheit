@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.1.0
+- sync about:support styling with default
+- sync about:permissions styling with default
+
 ### 2.0.0
 - add new icons for desktop notifications
 - add new icons for mixed content blocking
