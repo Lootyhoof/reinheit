@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.2.0
+- add initial Pale Moon 28 support
+- sync Windows 10 titlebar styling with default
+- sync statusbar styling with default
+- sync devtools styling with PM27 default
+
 ### 2.1.0
 - sync about:support styling with default
 - sync about:permissions styling with default
