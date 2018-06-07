@@ -130,7 +130,7 @@
   border-width: 0;
   border-radius: 20px;
   min-width: 0;
-  list-style-image: url("chrome://mozapps/skin/extensions/utilities.png");
+  list-style-image: url("chrome://mozapps/skin/extensions/question.png");
   margin-inline-end: 0;
   margin-bottom: 0;
 }
