@@ -1389,6 +1389,14 @@ toolbar[iconsize="small"] #sync-button[status="active"] {
 	background-color: Window;
 }
 
+/* findbar */
+
+.browserContainer > findbar {
+  background-color: transparent;
+  color: #000;
+  text-shadow: none;
+}
+
 /* status bar */
 
 statusbarpanel#statusbar-display {
