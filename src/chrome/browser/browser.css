@@ -1392,7 +1392,9 @@ toolbar[iconsize="small"] #sync-button[status="active"] {
 /* findbar */
 
 .browserContainer > findbar {
-  background-color: transparent;
+  background-image: url("chrome://global/skin/reintoolbar/stripe.png");
+	background-position: 0% 1px;
+	background-repeat: repeat;
   color: #000;
   text-shadow: none;
 }
