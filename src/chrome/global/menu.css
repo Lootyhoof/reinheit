@@ -1,40 +1,6 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
- * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is Mozilla Communicator client code, released
- * March 31, 1998.
- *
- * The Initial Developer of the Original Code is
- * Netscape Communications Corporation.
- * Portions created by the Initial Developer are Copyright (C) 1998-1999
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Joe Hewitt (hewitt@netscape.com)
- *
- * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /* ===== menu.css =======================================================
   == Styles used by XUL menu-related elements.
@@ -46,6 +12,7 @@
 
 menu,
 menuitem,
+menucaption,
 .splitmenu-menuitem {
 	-moz-box-align: center;
 	-moz-box-pack: center;
@@ -92,6 +59,11 @@ menuitem.spell-suggestion {
 .menu-iconic-accel {
 	-moz-margin-start: 0px !important;
 	-moz-margin-end: 14px !important;
+}
+menucaption > .menu-text,
+menucaption > .menu-iconic-text {
+  font-weight: bold;
+  padding-inline-start: 0 !important;
 }
 .menu-description {
 	font-style: italic;
@@ -196,7 +168,8 @@ menubar > menu:-moz-window-inactive {
 /* ::::: menu/menuitems in popups ::::: */
 
 menupopup > menu,
-menupopup > menuitem {
+menupopup > menuitem,
+menupopup > menucaption {
 	min-width: 0em;
 	max-width: 42em;
 	border: 1px solid transparent;
@@ -211,9 +184,8 @@ menuitem[_moz-menuactive="true"],
 
 /* ::::: menu/menuitems in menulist popups ::::: */
 
-.menulist-menupopup > menuitem,
 menulist > menupopup > menuitem,
-.menulist-menupopup > menu,
+menulist > menupopup > menucaption,
 menulist > menupopup > menu {
 	font: message-box;
 	color: -moz-FieldText;
@@ -224,9 +196,8 @@ menulist > menupopup > menu {
 	-moz-padding-end: 30px;
 	border: 1px solid transparent;
 }
-.menulist-menupopup > menuitem > .menu-iconic-left,
 menulist > menupopup > menuitem > .menu-iconic-left,
-.menulist-menupopup > menu > .menu-iconic-left,
+menulist > menupopup > menucaption > .menu-iconic-left,
 menulist > menupopup > menu > .menu-iconic-left {
 	display: none;
 }
@@ -285,8 +256,7 @@ menuseparator {
 	border-top: 1px dotted var(--border-color);
 	border-bottom: none;
 }
-menulist > menupopup > menuseparator,
-.menulist-menupopup > menuseparator {
+menulist > menupopup > menuseparator {
 	-moz-margin-start: 3px !important;
 }
 
@@ -296,12 +266,3 @@ menulist > menupopup > menuseparator,
 	max-width: none !important;
 	font: message-box;
 }
-
-/* ::::: tree column picker ::::: */
-
-.treecell-popupcell-menu {
-	-moz-margin-start: -2px;
-	list-style-image: url("chrome://global/skin/columnselect.gif");
-	-moz-image-region: auto;
-}
-
