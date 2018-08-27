@@ -4,6 +4,12 @@
 	height: 28px;
 	background-color: rgba(35,31,32,0.74);
 }
+/* Remove the button styling */
+button {
+  -moz-binding: none;
+  min-height: 28px;
+  min-width: 28px;
+}
 .playButton {
 	background: url("chrome://global/skin/media/pauseButton.png") no-repeat center;
 	/* Remove the native button appearance and styling */
@@ -38,6 +44,12 @@
 .muteButton[noAudio] + .volumeStack {
 	display: none;
 }
+.closedCaptionButton {
+  background: url(chrome://global/skin/media/closeCaptionButton.png) no-repeat center;
+}
+.closedCaptionButton[hidden] {
+  display: none;
+}
 .fullscreenButton,
 .fullscreenButton[fullscreened] {
 	-moz-appearance: none;
@@ -65,9 +77,39 @@
 	background-image: url(chrome://global/skin/media/volume-full.png);
 	background-clip: content-box;
 }
-.controlBar[audio-only] > .volumeStack {
+.textTrackList {
+  display: -moz-box;
+  -moz-appearance: none;
+  -moz-box-pack: end;
+  -moz-box-align: end;
+  padding: 0;
+}
+.textTrackList[hidden] {
+  display: none;
+}
+.textTrackList > html|*.textTrackItem {
+  -moz-appearance: none;
+  -moz-box-align: start;
+  text-align: start;
+  overflow: hidden;
+  margin: 0;
+  padding: 2px 10px;
+  margin-inline-end: 10px;
+  border: none;
+  color: rgba(255,255,255,.5);
+  background-color: rgba(35,31,32,.74);
+  white-space: nowrap;
+}
+.textTrackList > html|*.textTrackItem[on] {
+  color: white;
+  background-color: black;
+}
+.textTrackList > html|*.textTrackItem:hover {
+  background-color: rgba(0,0,0,.55);
+}
+.controlBar[fullscreen-unavailable] {
 	/* This value is duplicated in the videocontrols.xml adjustControlSize function. */
-	-moz-margin-end: 8px;
+	padding-inline-end: 8px;
 }
 .volumeControl .scale-thumb {
 	min-width: 0;
