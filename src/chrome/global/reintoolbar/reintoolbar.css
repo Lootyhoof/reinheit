@@ -93,8 +93,8 @@ toolbar[toolbarname*="#hover-bright"] toolbarbutton[open="true"] {
 	background-color: rgba(255,255,255,0.6);
 	padding-top: 3px;
 	padding-bottom: 1px;
-	-moz-padding-start: 3px;
-	-moz-padding-end: 1px;
+	padding-inline-start: 3px;
+	padding-inline-end: 1px;
 	border-color: transparent !important;
 }
 toolbar[toolbarname*="#hover-dark"] toolbarbutton:hover:active,
@@ -102,8 +102,8 @@ toolbar[toolbarname*="#hover-dark"] toolbarbutton[open="true"] {
 	background-image: url("chrome://global/skin/reintoolbar/back-light-b.png");
 	padding-top: 3px;
 	padding-bottom: 1px;
-	-moz-padding-start: 3px;
-	-moz-padding-end: 1px;
+	padding-inline-start: 3px;
+	padding-inline-end: 1px;
 	border-color: transparent !important;
 }
 toolbar[toolbarname*="#hover-highlight"] toolbarbutton:hover:active,
@@ -111,8 +111,8 @@ toolbar[toolbarname*="#hover-highlight"] toolbarbutton[open="true"] {
 	background-color: Highlight;
 	padding-top: 3px;
 	padding-bottom: 1px;
-	-moz-padding-start: 3px;
-	-moz-padding-end: 1px;
+	padding-inline-start: 3px;
+	padding-inline-end: 1px;
 	border-color: transparent !important;
 }
 toolbar[toolbarname*="#hover-bright"] > toolbarbutton:hover > toolbarbutton:hover,
@@ -156,21 +156,21 @@ toolbar[toolbarname*="#lbar-square"] #urlbar #identity-box.verifiedIdentity > hb
 
 toolbar[toolbarname*="#lbar-circle"] #urlbar {
 	background-clip: padding-box;
-	-moz-padding-end: 4px !important;
+	padding-inline-end: 4px !important;
 	border: 1px solid transparent !important;
 	border-radius: 100px !important;
 	box-shadow: 0.5px 1px 1px rgba(0,0,0,0.5) inset;
 }
 toolbar[toolbarname*="#lbar-circle"] #urlbar #identity-box.verifiedIdentity > hbox {
-	-moz-padding-start: 4px !important;
+	padding-inline-start: 4px !important;
 	box-shadow: 0.5px 1px 1px rgba(0,0,0,0.5) inset;
 	border-top-left-radius: 100px !important;
 	border-bottom-left-radius: 100px !important;
 }
 toolbar[toolbarname*="#sbar-circle"] #searchbar {
 	background-clip: padding-box;
-	-moz-padding-start: 4px !important;
-	-moz-padding-end: 4px !important;
+	padding-inline-start: 4px !important;
+	padding-inline-end: 4px !important;
 	border: 1px solid transparent !important;
 	border-radius: 100px !important;
 	box-shadow: 0.5px 1px 1px rgba(0,0,0,0.5) inset;

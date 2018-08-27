@@ -85,8 +85,8 @@ toolbarpaletteitem {
 /* place toolbar */
 
 toolbarpaletteitem[place="toolbar"] {
-	-moz-margin-start: -2px;
-	-moz-margin-end: -2px;
+	margin-inline-start: -2px;
+	margin-inline-end: -2px;
 	border-left: 2px solid transparent;
 	border-right: 2px solid transparent;
 }
@@ -100,8 +100,8 @@ toolbarpaletteitem[place="toolbar"] > toolbarspacer {
 .toolbarpaletteitem-box[type="spring"][place="toolbar"] {
 	margin-top: 2px;
 	margin-bottom: 2px;
-	-moz-margin-start: 0px;
-	-moz-margin-end: 2px;
+	margin-inline-start: 0px;
+	margin-inline-end: 2px;
 	border: 1px solid var(--border-color);
 	border-radius: 3px;
 }

@@ -15,8 +15,8 @@ body {
 	margin: 3px;
 	padding-top: 4px;
 	padding-bottom: 6px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 6px;
+	padding-inline-start: 4px;
+	padding-inline-end: 6px;
 	border-radius: 3px;
 	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
 }
@@ -35,10 +35,10 @@ body {
 	width: 16px;
 	padding-top: 4px;
 	padding-bottom: 6px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 6px;
+	padding-inline-start: 4px;
+	padding-inline-end: 6px;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
-	-moz-border-end: 1px solid rgba(0,0,0,0.2);
+	border-inline-end: 1px solid rgba(0,0,0,0.2);
 }
 html[dir=ltr] .favicon {
 	border-bottom-right-radius: 3px;
@@ -112,7 +112,7 @@ html[dir=rtl] .expander {
 	padding: 2px 4px;
 	border-top-right-radius: 3px;
 	border-top: 1px solid rgba(0,0,0,0.2);
-	-moz-border-end: 1px solid rgba(0,0,0,0.2);
+	border-inline-end: 1px solid rgba(0,0,0,0.2);
 }
 .stacked {
 	padding: 0;
@@ -180,7 +180,7 @@ html[dir=rtl] .expander {
 	top: 34px;
 	right: 1px;
 	padding: 0 5px;
-	-moz-border-start: 1px dotted rgba(0,0,0,0.2);
+	border-inline-start: 1px dotted rgba(0,0,0,0.2);
 }
 html[dir=rtl] .appTabTrayContainer {
 	right: auto;
@@ -261,7 +261,7 @@ html[dir=rtl] .undo .close {
 	opacity: 0.9;
 	border: 1px dashed rgba(0,0,0,0.12);
 	border-bottom: none;
-	-moz-border-end: none;
+	border-inline-end: none;
 	box-shadow: 1px 1px 0 rgba(255,255,255,0.15);
 }
 html[dir=rtl] .guideTrench {
@@ -319,8 +319,8 @@ input.name {
 	color: #444444;
 	margin-top: 3px;
 	margin-bottom: 0px;
-	-moz-margin-end: 0px;
-	-moz-margin-start: 3px;
+	margin-inline-end: 0px;
+	margin-inline-start: 3px;
 	padding: 1px;
 }
 html[dir=rtl] input.name {
@@ -342,7 +342,7 @@ input.name::-moz-placeholder {
 	color: transparent;
 	background-image: url("chrome://browser/skin/tabview/edit-light.png");
 	background-repeat: no-repeat;
-	-moz-padding-start: 20px;
+	padding-inline-start: 20px;
 }
 .title-container:hover input.name:-moz-placeholder {
 	color: #777777;
@@ -355,8 +355,8 @@ input.name::-moz-placeholder {
 	height: 100%;
 	margin-top: 3px;
 	margin-bottom: 0px;
-	-moz-margin-end: 0px;
-	-moz-margin-start: 3px;
+	margin-inline-end: 0px;
+	margin-inline-start: 3px;
 	padding: 1px;
 }
 html[dir=rtl] .title-shield {
@@ -463,8 +463,8 @@ html[dir=rtl] #actions {
 	border: none;
 	background-color: #404040;
 	border-radius: 3px;
-	-moz-padding-start: 5px;
-	-moz-padding-end: 5px;
+	padding-inline-start: 5px;
+	padding-inline-end: 5px;
 	font-size: 14px;
 }
 .notMainMatch{
@@ -485,16 +485,16 @@ html[dir=rtl] #otherresults {
 #otherresults .label {
 	color: #999999;
 	line-height: 30px;
-	-moz-margin-start: 5px;
-	-moz-margin-end: 5px;
+	margin-inline-start: 5px;
+	margin-inline-end: 5px;
 }
 .inlineMatch {
 	cursor: pointer;
 	background-color: #ebebeb;
 	height: 20px;
-	-moz-margin-end: 5px;
-	-moz-padding-start: 3px;
-	-moz-padding-end: 3px;
+	margin-inline-end: 5px;
+	padding-inline-start: 3px;
+	padding-inline-end: 3px;
 	border: 1px solid rgba(255,255,255,0.5);
 	border-radius: 3px;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.6);
@@ -505,7 +505,7 @@ html[dir=rtl] #otherresults {
 .inlineMatch > img {
 	position: relative;
 	top: 2px;
-	-moz-margin-end: 5px;
+	margin-inline-end: 5px;
 }
 .inlineMatch > span {
 	max-width: 200px;

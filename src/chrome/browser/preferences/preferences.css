@@ -78,8 +78,8 @@ radio[pane=paneSync] {
 #browserHomePage {
 	padding-top: 2px;
 	padding-bottom: 3px;
-	-moz-padding-start: 3px;
-	-moz-padding-end: 3px;
+	padding-inline-start: 3px;
+	padding-inline-end: 3px;
 	background-color: -moz-Dialog;
 }
 
@@ -104,8 +104,8 @@ filefield[disabled="true"] .fileFieldIcon {
 	height: 16px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	-moz-margin-start: 2px;
-	-moz-margin-end: 4px;
+	margin-inline-start: 2px;
+	margin-inline-end: 4px;
 }
 .fileFieldLabel {
 	-moz-appearance: none;

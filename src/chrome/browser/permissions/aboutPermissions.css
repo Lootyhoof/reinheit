@@ -28,7 +28,7 @@
 	list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
 	height: 16px;
 	width: 16px;
-	-moz-margin-end: 4px;
+	margin-inline-end: 4px;
 }
 #all-sites-item > .site-container > .site-favicon {
 	list-style-image: url("chrome://browser/skin/places/allBookmarks.png");
@@ -43,7 +43,7 @@
 
 #site-description {
 	font-size: 125%;
-	-moz-margin-start: 6px; /* to match button margin */
+	margin-inline-start: 6px; /* to match button margin */
 }
 #site-label {
 	font-weight: bold;
@@ -53,7 +53,7 @@
 #defaults-description {
 	font-size: 125%;
 	font-weight: bold;
-	-moz-margin-start: 6px;
+	margin-inline-start: 6px;
 }
 .pref-item {
 	margin-bottom: 10px;
@@ -62,7 +62,7 @@
 .pref-icon {
 	width: 32px;
 	height: 32px;
-	-moz-margin-end: 10px;
+	margin-inline-end: 10px;
 }
 .pref-icon[type="password"] {
 	list-style-image: url("chrome://mozapps/skin/passwordmgr/key-32.png");

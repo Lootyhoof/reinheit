@@ -68,12 +68,12 @@
 	background-position: 100% 8px !important;
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;
-	-moz-margin-start: 0px !important;
-	-moz-margin-end: 2px !important;
+	margin-inline-start: 0px !important;
+	margin-inline-end: 2px !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
-	-moz-padding-start: 0px !important;
-	-moz-padding-end: 10px !important;
+	padding-inline-start: 0px !important;
+	padding-inline-end: 10px !important;
 }
 
 /* sidebar page */
@@ -89,8 +89,8 @@
 #addons-page[aios_appVendor="Mozilla"] .category[selected] {
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;
-	-moz-margin-start: 0px !important;
-	-moz-margin-end: 2px !important;
+	margin-inline-start: 0px !important;
+	margin-inline-end: 2px !important;
 	border: none !important;
 }
 #main-window[aios_appVendor="Mozilla"] #viewGroup {

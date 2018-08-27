@@ -114,7 +114,7 @@
 
 /* CELLS */
 .newtab-cell {
-	-moz-margin-end: 20px;
+	margin-inline-end: 20px;
 	background-color: rgba(255,255,255,0.2);
 	border: 1px solid;
 	border-color: rgba(8,22,37,0.12) rgba(8,22,37,0.14) rgba(8,22,37,0.16);
@@ -126,7 +126,7 @@
 	border-color: rgba(8,22,37,0.15) rgba(8,22,37,0.17) rgba(8,22,37,0.19);
 }
 .newtab-cell:last-child {
-	-moz-margin-end: 0;
+	margin-inline-end: 0;
 }
 .newtab-cell:hover:not(:empty) {
 	border-color: rgba(8,22,37,0.25) rgba(8,22,37,0.27) rgba(8,22,37,0.3);

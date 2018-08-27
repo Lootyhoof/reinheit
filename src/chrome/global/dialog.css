@@ -78,8 +78,8 @@ dialogheader {
 	margin: 0px;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	-moz-padding-start: 25px;
-	-moz-padding-end: 5px;
+	padding-inline-start: 25px;
+	padding-inline-end: 5px;
 	border-left: none;
 	border-right: none;
 	border-top: none;
@@ -90,5 +90,5 @@ dialogheader {
 	font-weight: bold;
 }
 .header-large > .dialogheader-description {
-	-moz-margin-start: 12px !important;
+	margin-inline-start: 12px !important;
 }

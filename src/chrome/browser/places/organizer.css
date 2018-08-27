@@ -41,7 +41,7 @@
 }
 #placesMenu > menu > label {
 	background: url("chrome://global/skin/arrow/arrow-dn.gif") right center no-repeat;
-	-moz-padding-end: 8px;
+	padding-inline-end: 8px;
 }
 #placesMenu[chromedir="rtl"] > menu > label {
 	background-position: left center;

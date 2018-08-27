@@ -90,8 +90,8 @@ separator.wizard-buttons-separator {
 separator.groove[orient="vertical"] {
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid ThreeDHighlight;
-	-moz-margin-start: 0.4em;
-	-moz-margin-end: 0.4em;
+	margin-inline-start: 0.4em;
+	margin-inline-end: 0.4em;
 }
 
 /* groove separators (0 padding, for dividing effects) */
@@ -132,8 +132,8 @@ description {
 label {
 	margin-top: 1px;
 	margin-bottom: 1px;
-	-moz-margin-start: 5px;
-	-moz-margin-end: 5px;
+	margin-inline-start: 5px;
+	margin-inline-end: 5px;
 }
 .header {
 	font-weight: bold;
@@ -148,7 +148,7 @@ label {
 	font-family: monospace;
 }
 .indent {
-	-moz-margin-start: 23px;
+	margin-inline-start: 23px;
 }
 .box-padded {
 	padding: 5px;
@@ -162,8 +162,8 @@ label {
 .caption-text {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	-moz-margin-start: 1px !important;
-	-moz-margin-end: 2px !important;
+	margin-inline-start: 1px !important;
+	margin-inline-end: 2px !important;
 }
 
 /* class for text with a 'link' appearance */

@@ -64,7 +64,7 @@ richlistitem[type="download"][state="1"]:hover {
 }
 .downloadInfo {
 	padding: 3px;
-	-moz-padding-end: 0px;
+	padding-inline-end: 0px;
 }
 .downloadTypeIcon {
 	/* Prevent flickering when changing states. */
@@ -208,7 +208,7 @@ toolbar[iconsize="small"] #downloads-indicator-progress {
 	min-width: 0px;
 	min-height: 0px;
 	border: 1px solid var(--border-color);
-	-moz-border-start: none;
+	border-inline-start: none;
 	border-radius: 0px 2px 2px 0px;
 }
 #downloads-indicator[paused] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-progress > .progress-bar {

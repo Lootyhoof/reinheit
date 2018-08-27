@@ -17,7 +17,7 @@ toolbar[iconsize="small"] #web-developer-button.toolbarbutton-1 {
 }
 toolbarbutton[id^="web-developer"]:not([type="menu"]) .toolbarbutton-icon,
 toolbarbutton[id^="web-developer"][type="menu"]:not([buttonstyle="full"]) .toolbarbutton-icon {
-	-moz-margin-end: 0px;
+	margin-inline-end: 0px;
 }
 #web-developer-cookies-toolbar,
 #web-developer-css-toolbar,

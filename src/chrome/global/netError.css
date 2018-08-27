@@ -25,7 +25,7 @@ h1 {
 }
 ul, ol {
 	margin: 0px;
-	-moz-margin-start: 1.5em;
+	margin-inline-start: 1.5em;
 	padding: 0px;
 }
 ul > li, ol > li {
@@ -42,7 +42,7 @@ ul {
 	border: 1px solid var(--border-color);
 	border-radius: 10px;
 	padding: 3em;
-	-moz-padding-start: 30px;
+	padding-inline-start: 30px;
 	background: url("chrome://global/skin/icons/Warning.png") left 0 no-repeat -moz-Field;
 	background-origin: content-box;
 }
@@ -53,10 +53,10 @@ body[dir="rtl"] #errorPageContainer {
 	background-position: right 0px;
 }
 #errorTitle {
-	-moz-margin-start: 80px;
+	margin-inline-start: 80px;
 }
 #errorLongContent {
-	-moz-margin-start: 80px;
+	margin-inline-start: 80px;
 }
 #errorShortDesc > p {
 	overflow: auto;
@@ -66,7 +66,7 @@ body[dir="rtl"] #errorPageContainer {
 	white-space: pre-wrap;
 }
 #errorLongDesc {
-	-moz-padding-end: 3em;
+	padding-inline-end: 3em;
 	font-size: 110%;
 }
 #errorLongDesc > p {
@@ -74,13 +74,13 @@ body[dir="rtl"] #errorPageContainer {
 
 #errorTryAgain {
 	margin-top: 2em;
-	-moz-margin-start: 80px;
+	margin-inline-start: 80px;
 }
 #brand {
 	position: absolute;
 	right: 0px;
 	bottom: -1.5em;
-	-moz-margin-end: 10px;
+	margin-inline-end: 10px;
 	opacity: 0.4;
 }
 body[dir="rtl"] #brand {

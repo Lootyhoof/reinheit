@@ -8,7 +8,7 @@
 #clearListButton {
 	list-style-image: url("chrome://global/skin/console/bullet-clear.png");
 	margin: 0px;
-	-moz-margin-end: 5px;
+	margin-inline-end: 5px;
 }
 
 /* Download View */
@@ -18,8 +18,8 @@
 	margin: 0px;
 	border-top: none !important;
 	border-bottom: 1px solid var(--border-color) !important;
-	-moz-border-start: none !important;
-	-moz-border-end: none !important;
+	border-inline-start: none !important;
+	border-inline-end: none !important;
 }
 
 /* Download View Items */
@@ -28,8 +28,8 @@ richlistitem[type="download"] {
 	min-height: 46px;
 	padding-top: 4px;
 	padding: 4px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 8px;
+	padding-inline-start: 4px;
+	padding-inline-end: 8px;
 	border-bottom: 1px dotted var(--border-color);
 }
 richlistitem[type="download"] .name {

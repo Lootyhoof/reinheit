@@ -47,11 +47,11 @@
 .typeIcon,
 .actionIcon {
 	width: 16px !important;
-	-moz-margin-start: 6px;
-	-moz-margin-end: 3px;
+	margin-inline-start: 6px;
+	margin-inline-end: 3px;
 }
 #paneApplications richlistitem label {
-	-moz-margin-start: 1px;
+	margin-inline-start: 1px;
 	margin-top: 1px;
 }
 #paneApplications richlistitem {
@@ -61,7 +61,7 @@
 }
 #paneApplications richlistitem > hbox > hbox+hbox {
 	opacity: 1;
-	-moz-margin-start: 6px;
+	margin-inline-start: 6px;
 }
 richlistitem[appHandlerIcon="ask"],
 menuitem[appHandlerIcon="ask"] {
@@ -83,9 +83,9 @@ menuitem[oncommand="gApplicationsPane.chooseApp(event)"] {
 	list-style-image: url("chrome://browser/skin/preferences/application.png");
 }
 .actionsMenu .menulist-icon {
-	-moz-margin-start: 3px !important;
-	-moz-margin-end: 3px !important;
+	margin-inline-start: 3px !important;
+	margin-inline-end: 3px !important;
 }
 .actionsMenu > menupopup > menuitem {
-	-moz-padding-start: 1px;
+	padding-inline-start: 1px;
 }

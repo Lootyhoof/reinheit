@@ -15,16 +15,16 @@ toolbar[iconsize="small"] #scrapbook-button > .toolbarbutton-icon {
 #ScrapBookWindow toolbar#ScrapBookMainToolbar toolbarbutton {
 	margin-top: 1px !important;
 	margin-bottom: 1px !important;
-	-moz-margin-start: 0px !important;
-	-moz-margin-end: 1px !important;
+	margin-inline-start: 0px !important;
+	margin-inline-end: 1px !important;
 	padding: 2px 3px !important;
 }
 #ScrapBookWindow toolbar#ScrapBookMainToolbar toolbarbutton:hover:active,
 #ScrapBookWindow toolbar#ScrapBookMainToolbar toolbarbutton[open="true"] {
 	padding-top: 3px !important;
 	padding-bottom: 1px !important;
-	-moz-padding-start: 4px !important;
-	-moz-padding-end: 2px !important;
+	padding-inline-start: 4px !important;
+	padding-inline-end: 2px !important;
 }
 toolbarbutton#sbToolbarNewFolder {
 	list-style-image: url("chrome://global/skin/add-ons/scrap-book-folder-make.png") !important;
@@ -96,7 +96,7 @@ treechildren::-moz-tree-image(ScrapBookTreecolTitle, leaf, note) {
 	background-repeat: no-repeat;
 	width: 16px;
 	height: 16px;
-	-moz-margin-end: 3px;
+	margin-inline-end: 3px;
 	padding-top: 16px;
 }
 #sbPropCommentTab .tab-icon:not([src="chrome://scrapbook/skin/edit_comment.png"]) {

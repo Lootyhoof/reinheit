@@ -37,7 +37,7 @@ resizer[dir="bottomend"] {
 	width: 16px;
 	height: 16px;
 	margin-bottom: 2px;
-	-moz-margin-end: 2px;
+	margin-inline-end: 2px;
 }
 
 statusbar resizer[dir="bottomright"] {

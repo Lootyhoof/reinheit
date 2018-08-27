@@ -120,8 +120,8 @@
 	margin: 0;
 	padding-top: 1px;
 	padding-bottom: 2px;
-	-moz-padding-start: 6px;
-	-moz-padding-end: 5px;
+	padding-inline-start: 6px;
+	padding-inline-end: 5px;
 }
 #select-grid separator {
 	border-top: 1px solid #D6E5F5;
@@ -147,13 +147,13 @@
 }
 .action-list {
 	margin-top: 10px;
-	-moz-margin-start: 5em;
+	margin-inline-start: 5em;
 }
 .action-header {
 	margin-bottom: 10px;
 }
 #confirm .addon {
-	-moz-margin-start: 3em;
+	margin-inline-start: 3em;
 	-moz-box-align: center;
 }
 .addon:not([active]) .addon-icon,

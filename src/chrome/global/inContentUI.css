@@ -91,8 +91,8 @@ html|html {
 *|button:hover:active {
 	padding-top: 1px;
 	padding-bottom: 0px;
-	-moz-padding-start: 4px;
-	-moz-padding-end: 2px;
+	padding-inline-start: 4px;
+	padding-inline-end: 2px;
 }
 colorpicker[type="button"] {
 	margin: 1px 5px 2px 5px;

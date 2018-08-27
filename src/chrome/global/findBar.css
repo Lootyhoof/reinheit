@@ -64,8 +64,8 @@ findbar {
 	list-style-image: none;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	-moz-margin-start: 12px;
-	-moz-margin-end: 0px;
+	margin-inline-start: 12px;
+	margin-inline-end: 0px;
 	width: 16px;
 	height: 16px;
 	border: 1px solid transparent;
@@ -73,8 +73,8 @@ findbar {
 .findbar-find-status {
 	margin-top: 1px !important;
 	margin-bottom: 1px !important;
-	-moz-margin-start: 0px !important;
-	-moz-margin-end: 1px !important;
+	margin-inline-start: 0px !important;
+	margin-inline-end: 1px !important;
 	padding: 2px 3px !important;
 	border: 1px solid transparent;
 }

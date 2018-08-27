@@ -65,7 +65,7 @@ h2 {
 	border: 1px solid #FFBD09; /* pale yellow extracted from yellow passport icon */
 	border-radius: 10px;
 	padding: 3em;
-	-moz-padding-start: 30px;
+	padding-inline-start: 30px;
 	background: url("chrome://global/skin/icons/sslWarning.png") left 0 no-repeat -moz-Field;
 	background-origin: content-box;
 }
@@ -73,10 +73,10 @@ body[dir="rtl"] #errorPageContainer {
 	background-position: right 0px;
 }
 #errorTitle {
-	-moz-margin-start: 80px;
+	margin-inline-start: 80px;
 }
 #errorLongContent {
-	-moz-margin-start: 80px;
+	margin-inline-start: 80px;
 }
 #technicalContent > h2, #expertContent > h2 {
 	background : url("chrome://global/skin/arrow/arrow-dn-sharp.gif") left center no-repeat;

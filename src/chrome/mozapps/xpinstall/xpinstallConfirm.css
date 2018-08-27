@@ -10,7 +10,7 @@
 	border: 1px solid #CCCCCC;
 }
 #itemWarningIntro {
-	-moz-margin-start: 8px;
+	margin-inline-start: 8px;
 }
 #dialogContentBox {
 	padding: 5px;
@@ -19,15 +19,15 @@ installitem {
 	margin-bottom: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	-moz-padding-start: 5px;
-	-moz-padding-end: 0px;
+	padding-inline-start: 5px;
+	padding-inline-end: 0px;
 	border-bottom: 1px dotted #CCCCCC;
 }
 .alert-icon {
 	list-style-image: url("chrome://global/skin/icons/Warning.png");
 	width: 32px;
 	height: 32px;
-	-moz-margin-end: 10px;
+	margin-inline-end: 10px;
 }
 .warning {
 	font-weight: bold;
@@ -35,7 +35,7 @@ installitem {
 .xpinstallIconContainer {
 	width: 32px;
 	height: 32px;
-	-moz-margin-end: 5px;
+	margin-inline-end: 5px;
 }
 .xpinstallItemName {
 	font-weight: bold;
@@ -50,8 +50,8 @@ installitem {
 	background-color: -moz-Field;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	-moz-margin-start: 6px;
-	-moz-margin-end: 5px;
+	margin-inline-start: 6px;
+	margin-inline-end: 5px;
 	padding: 0px;
 	border: none;
 }

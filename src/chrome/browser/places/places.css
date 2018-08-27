@@ -122,5 +122,5 @@ treechildren::-moz-tree-cell-text(date, session-continue) {
 #viewButton > hbox > dropmarker {
 	height: auto;
 	width: auto;
-	-moz-margin-end: -3px;
+	margin-inline-end: -3px;
 }

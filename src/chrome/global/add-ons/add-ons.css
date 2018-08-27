@@ -117,8 +117,8 @@ toolbar[iconsize="small"] #menu-button.toolbarbutton-1 {
 	background: transparent !important;
 	padding-top: 3px !important;
 	padding-bottom: 1px !important;
-	-moz-padding-start: 3px !important;
-	-moz-padding-end: 1px !important;
+	padding-inline-start: 3px !important;
+	padding-inline-end: 1px !important;
 	border-color: var(--border-color) ThreeDHighlight ThreeDHighlight var(--border-color) !important;
 }
 #nav-bar #downbarMini {
