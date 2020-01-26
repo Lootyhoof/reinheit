@@ -1,5 +1,5 @@
 # reinheit
-![Preview](http://i68.tinypic.com/ekgnxg.png)
+![Preview](https://i.imgur.com/WWJ97sV.png)
 
 Fork of the theme "rein" by Naoto Kusumi for Pale Moon.
 
