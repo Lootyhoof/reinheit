@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.6.2
+- minor code cleanup
+
 ### 2.6.1
 - small version bump for Pale Moon 29.0 compatibility (no code changes)
 
