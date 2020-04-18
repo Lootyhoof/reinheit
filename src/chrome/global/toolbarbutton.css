@@ -53,41 +53,41 @@ toolbarbutton[disabled="true"][open="true"] {
 #TabsToolbar toolbarbutton {
 	margin: 2px 1px;
 }
-#nav-bar toolbarbutton:hover,
-#nav-bar toolbarbutton[buttonover="true"],
-#FindToolbar toolbarbutton:hover,
-#FindToolbar toolbarbutton[buttonover="true"],
-sidebarheader toolbarbutton:hover,
-sidebarheader toolbarbutton[buttonover="true"] {
+#nav-bar toolbarbutton:not([disabled=true]):hover,
+#nav-bar toolbarbutton[buttonover="true"]:not([disabled=true]),
+#FindToolbar toolbarbutton:not([disabled=true]):hover,
+#FindToolbar toolbarbutton[buttonover="true"]:not([disabled=true]),
+sidebarheader toolbarbutton:not([disabled=true]):hover,
+sidebarheader toolbarbutton[buttonover="true"]:not([disabled=true]) {
 	background-color: rgba(255,255,255,0.6);
 	background-clip: padding-box;
 	border-color: transparent !important;
 	border-radius: 4px;
 }
-#nav-bar toolbarbutton:hover:active,
-#nav-bar toolbarbutton[open="true"],
-#nav-bar toolbarbutton[_moz-menuactive="true"],
-#FindToolbar toolbarbutton:hover:active,
-#FindToolbar toolbarbutton[open="true"],
-#FindToolbar toolbarbutton[_moz-menuactive="true"],
-sidebarheader toolbarbutton:hover:active,
-sidebarheader toolbarbutton[open="true"],
-sidebarheader toolbarbutton[_moz-menuactive="true"] {
+#nav-bar toolbarbutton:not([disabled=true]):hover:active,
+#nav-bar toolbarbutton[open="true"]:not([disabled=true]),
+#nav-bar toolbarbutton[_moz-menuactive="true"]:not([disabled=true]),
+#FindToolbar toolbarbutton:not([disabled=true]):hover:active,
+#FindToolbar toolbarbutton[open="true"]:not([disabled=true]),
+#FindToolbar toolbarbutton[_moz-menuactive="true"]:not([disabled=true]),
+sidebarheader toolbarbutton:not([disabled=true]):hover:active,
+sidebarheader toolbarbutton[open="true"]:not([disabled=true]),
+sidebarheader toolbarbutton[_moz-menuactive="true"]:not([disabled=true]) {
 	background-color: rgba(255,255,255,0.6);
 	background-clip: padding-box;
 	border-color: transparent !important;
 	border-radius: 4px;
 }
-#TabsToolbar toolbarbutton:hover,
-#TabsToolbar toolbarbutton[buttonover="true"] {
+#TabsToolbar toolbarbutton:not([disabled=true]):hover,
+#TabsToolbar toolbarbutton[buttonover="true"]:not([disabled=true]) {
 	background-color: rgba(255,255,255,0.3);
 	background-clip: padding-box;
 	border-color: transparent !important;
 	border-radius: 4px;
 }
-#TabsToolbar toolbarbutton:hover:active,
-#TabsToolbar toolbarbutton[open="true"],
-#TabsToolbar toolbarbutton[_moz-menuactive="true"] {
+#TabsToolbar toolbarbutton:not([disabled=true]):hover:active,
+#TabsToolbar toolbarbutton[open="true"]:not([disabled=true]),
+#TabsToolbar toolbarbutton[_moz-menuactive="true"]:not([disabled=true]) {
 	background-color: rgba(255,255,255,0.3);
 	background-clip: padding-box;
 	border-color: transparent !important;
