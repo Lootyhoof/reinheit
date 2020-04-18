@@ -2,8 +2,8 @@ skin	browser	reinheit	chrome/browser/
 skin	global	reinheit	chrome/global/
 skin	mozapps	reinheit	chrome/mozapps/
 
+skin	os reinheit	chrome/os/linux/
 skin	os reinheit	chrome/os/darwin/ os=Darwin
-skin	os reinheit	chrome/os/linux/ os=Linux
 skin	os reinheit	chrome/os/winnt/ os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
