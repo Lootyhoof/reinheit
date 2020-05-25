@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.7.0
+- support other GTK-based operating systems
+- Windows/Linux: improve fullscreen styling
+- Windows: make compositor (aero/Windows 8+) appearance more consistent
+- Linux: improve appmenu appearance
+- Mac: shrink private browsing icon spacing
+- internal cleanup
+
 ### 2.6.2
 - minor code cleanup
 
