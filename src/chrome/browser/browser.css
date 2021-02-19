@@ -1203,6 +1203,17 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
+#identity-box.verifiedDomain {
+	background-color: #cdcdff;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+#identity-box.mixedContent {
+	background-color: #ffe9cd;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+  color: #000000;
+}
 #identity-icon-labels {
 	margin-inline-end: 1px;
 }
