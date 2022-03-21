@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.8.0
+- add mixed-mode SSL styling
+- support Pale Moon 30
+
 ### 2.7.0
 - support other GTK-based operating systems
 - Windows/Linux: improve fullscreen styling
