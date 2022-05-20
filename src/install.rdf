@@ -9,14 +9,13 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{4d457603-1613-4177-b98e-98e62085837f}</em:id>
-    <em:version>2.8.0</em:version>
+    <em:version>2.9.0</em:version>
     <em:name>reinheit</em:name>
     <em:description>das Monochrom wiederbelebung. (Fork of "rein" by Naoto Kusumi)</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>reinheit</em:internalName>
     <em:skinnable>true</em:skinnable>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/reinheit/master/update.xml</em:updateURL>
 
     <em:contributor>Naoto Kusumi</em:contributor>
     <em:contributor>Kozakura Inko</em:contributor>
